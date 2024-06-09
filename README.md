@@ -88,7 +88,7 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
 3) Marital status and default have a slight influence on the outcome.
 
 
-### Next Steps/Actions fpr Data Preparation and Feature Engineering. 
+#### Categorical Variables: Next Steps/Actions fpr Data Preparation and Feature Engineering. 
 
 **Job Category: Encoding 
 Why? Different job categories have varying subscription rates.
@@ -131,10 +131,59 @@ Why? Previous campaign outcomes significantly influence subscription rates.
 
 
 
-   
+#### EDA 2)Explore the relationships among Numerical Vraible and Response Variable 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
+
+#### Findings: 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/3310e747-e38c-4de1-9d84-1791e75f7b02)  
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef850449-a748-41a4-8e1f-2e4a0394ace5) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
+
+
+T-TESTS
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9)
+
+Correlations
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
 
 
 
+
+
+
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b4a39af2-20f4-4cbf-978a-315ab1df094a) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Model Comparisions:
+
+
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/933c7dca-9e8a-446c-b3e5-696702eee519)
 
 
 
