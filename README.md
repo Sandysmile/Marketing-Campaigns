@@ -154,13 +154,16 @@ Why? Previous campaign outcomes significantly influence subscription rates.
 
 
 
+
 T-TESTS 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
+
 Correlations 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
+
 
 
 
