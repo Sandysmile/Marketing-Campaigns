@@ -78,7 +78,7 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
 
 1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
 
-2) Housing, loan, and day of the week do not contribute to the success at all; their success rates are equal to the overall success rate.
+2) Loan, housing, and day of the week do not contribute to the success at all; their success rates are equal to the overall success rate.
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d26270bc-94c7-4bde-a34a-9e07a585cfba)
 
