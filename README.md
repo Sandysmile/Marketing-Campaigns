@@ -73,8 +73,7 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
 
 
 
-##### Sumery and Next Steps: 
-
+##### Key Insights and Next Steps for Data Preparation or Feature Engineering 
 
 1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
 
@@ -85,12 +84,11 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9434a7fd-bbea-4007-8df2-d1ee89509509)
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9260ba25-a3a6-48e6-83bf-daec649f60b1)
-   
 
 3) Marital status and default have a slight influence on the outcome.
 
 
-Next Steps/Actions fpr Data Preparation and Feature Engineering. 
+### Next Steps/Actions fpr Data Preparation and Feature Engineering. 
 
 **Job Category: Encoding 
 Why? Different job categories have varying subscription rates.
@@ -107,29 +105,31 @@ Why: Different education levels have varying subscription rates.
 
 Why? The default status has minimal influence on subscription rates.
 
-Housing: Encoding
+**Housing: Encoding
 
 Why? Housing loan status shows some influence on subscription rates.
 
-Loan: Encoding
+** Loan: Encoding
 
 Why? Personal loan status shows some influence on subscription rates.
 
-Contact: Encoding
+** Contact: Encoding
 
 Why? Different contact types have varying subscription rates.
 
-Month: Encoding
+** Month: Encoding
 
-Insight: The month of contact has a significant influence on subscription rates.
+Why? The month of contact has a significant influence on subscription rates.
 
-Day of the Week: Feature Importance (removed) 
+**Day of the Week: Feature Importance (removed) 
 
 Why? The day of the week of contact has minimal influence on subscription rates.
 
-Poutcome (Previous Outcome): Encoding
+**Poutcome (Previous Outcome): Encoding
 
-Why? Previous campaign outcomes significantly influence subscription rates.
+Why? Previous campaign outcomes significantly influence subscription rates. 
+
+
 
    
 
