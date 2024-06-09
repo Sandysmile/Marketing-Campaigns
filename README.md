@@ -51,3 +51,6 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/2498bc86-9725-4d65-be43-3874b9fe068d) 
 
 
+### EDA
+#### 1)Explore the relationships among Categorical Varaibles and Response Variable 
+
