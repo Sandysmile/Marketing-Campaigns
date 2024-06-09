@@ -35,5 +35,13 @@ The dataset comes from the UCI Machine Learning repository link. The data is fro
 
 The dataset was collected from a Portuguese bank that conducted direct marketing campaigns using their contact center. The primary marketing channel was telephone calls by human agents, sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
 
-The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 8% success rate. 
+The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11 % success rate. 
+
+### Data Quality Check 
+1) 0 null values
+2) 12 duplicates
+3) unbalanced dataset (see the chart below)
+   
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/2498bc86-9725-4d65-be43-3874b9fe068d) 
+
 
