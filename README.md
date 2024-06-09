@@ -27,7 +27,7 @@ In today's competitive market, optimizing the efficiency and effectiveness of di
 
 By leveraging machine learning and CRIP methodology, we can continousely transform our marketing campaigns from broad, generalized efforts to highly targeted and efficient operations, even highly personalized campaigns. This not only boosts our successful bank product subsribers but also ensures that we are using our resources in the most impactful way possible.
 
-## Data Understandings: Backgound, Quality Check, and EDA 
+## Data Understandings: Backgound, Data Dictonoary, Quality Check, and EDA 
 
 ### Background: 
 
@@ -37,7 +37,13 @@ The dataset was collected from a Portuguese bank that conducted direct marketing
 
 The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11 % success rate. 
 
-### Data Quality Check 
+### Data Dictionary: 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/e95d693c-385e-41ee-9cdf-797b3bffbf47)
+
+
+### Data Quality Check: 
+
 1) 0 null values
 2) 12 duplicates
 3) unbalanced dataset (see the chart below)
