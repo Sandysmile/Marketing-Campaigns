@@ -1,25 +1,24 @@
-## Practical Application III: Apply and Compare 5 Common Classifiers to Predict Subscription/Direct Deposit Outcomes in Banking Marketing Campaigns
+# Practical Application III: Apply and Compare 5 Common Classifiers to Predict Subscription/Direct Deposit Outcomes in Banking Marketing Campaigns
 
 Overview/Learning Goal: 
 
 In this practical application, the goal is to compare the performance of classifiers including K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines, and Random Forest. 
 A dataset related to marketing bank products over the telephone is used for the applicaiton. in additional 
 
-# Methodology: CRISP-DM Framework 
+## Methodology: CRISP-DM Framework 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/26a9f4ba-b87d-4319-ba53-fb00675ec3eb) 
 
 
 
-Business Understandings: Context, Goal and Benefits
+### Business Understandings: Context, Goal and Benefits
 
 In today's competitive market, optimizing the efficiency and effectiveness of direct marketing campaigns is crucial for increasing customer engagement and maximizing returns on business investment.
 
-Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted. 
+#### Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted. 
 
 
-Business Benefits: 
-
+### Business Benefits: 
 
 1. Targeted Campaigns: By predicting which clients are most likely to respond positively, we can focus our efforts on high-potential leads. This means more effective use of our marketing budget and resources.
 2. Resource Optimization: ML helps us understand the factors that drive successful client subscriptions. This insight allows us to allocate our resources—such as human effort, phone calls, and time—more efficiently. Instead of a broad approach, we can tailor our strategies to where they are most effective. 
