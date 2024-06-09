@@ -11,12 +11,11 @@ A dataset related to marketing bank products over the telephone is used for the 
 
 
 
-### Business Understandings: Context, Goal and Benefits
+## Business Understandings: Context, Goal and Benefits
 
 In today's competitive market, optimizing the efficiency and effectiveness of direct marketing campaigns is crucial for increasing customer engagement and maximizing returns on business investment.
 
-#### Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted. 
-
+### Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted. 
 
 ### Business Benefits: 
 
