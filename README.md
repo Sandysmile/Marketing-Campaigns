@@ -87,14 +87,51 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9260ba25-a3a6-48e6-83bf-daec649f60b1)
    
 
-   
-   
+3) Marital status and default have a slight influence on the outcome.
+
+
+Next Steps/Actions fpr Data Preparation and Feature Engineering. 
+
+**Job Category: Encoding 
+Why? Different job categories have varying subscription rates.
+
+**Marital Status: Encoding
+
+Why? Marital status shows some influence on subscription rates.
+
+**Education: Encoding
+
+Why: Different education levels have varying subscription rates.
+
+**Default: Feature Importance: (removed)
+
+Why? The default status has minimal influence on subscription rates.
+
+Housing: Encoding
+
+Why? Housing loan status shows some influence on subscription rates.
+
+Loan: Encoding
+
+Why? Personal loan status shows some influence on subscription rates.
+
+Contact: Encoding
+
+Why? Different contact types have varying subscription rates.
+
+Month: Encoding
+
+Insight: The month of contact has a significant influence on subscription rates.
+
+Day of the Week: Feature Importance (removed) 
+
+Why? The day of the week of contact has minimal influence on subscription rates.
+
+Poutcome (Previous Outcome): Encoding
+
+Why? Previous campaign outcomes significantly influence subscription rates.
 
    
-
-
-
-4) Marital status and default have a slight influence on the outcome.
 
 
 
