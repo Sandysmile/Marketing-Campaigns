@@ -176,15 +176,6 @@ Correlations
 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b4a39af2-20f4-4cbf-978a-315ab1df094a) 
-
-
-
-
-
-
-
-
 
 
 
