@@ -55,13 +55,48 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
 #### 1)Explore the relationships among Categorical Varaibles and Response Variable 
 
 
-Findings 
+##### Findings 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/4d07a0f4-a351-45c5-9ed7-aa2e49cd1d9b) 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b833d6bf-625f-431f-bda2-5816ce588909) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/85c30490-8156-4c8a-8289-cfa2c32f5842)  
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a4fb81eb-7235-4e11-9483-d9c7ffaeaf2e) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ad89503c-3ebe-4a40-a6c1-29f35530ee39) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d5596456-0f64-4319-b402-e4f7fec9f7f3) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/e915aed8-7287-4967-a830-a205f1fccf95) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b87e8b89-4f86-4a18-906e-2f726900d0c4)
+
+
+
+
+
+##### Sumery and Next Steps: 
+
+
+1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
+
+2) Housing, loan, and day of the week do not contribute to the success at all; their success rates are equal to the overall success rate.
+
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d26270bc-94c7-4bde-a34a-9e07a585cfba)
+
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9434a7fd-bbea-4007-8df2-d1ee89509509)
+
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9260ba25-a3a6-48e6-83bf-daec649f60b1)
+   
+
+   
+   
+
+   
+
+
+
+4) Marital status and default have a slight influence on the outcome.
+
+
 
 
 
