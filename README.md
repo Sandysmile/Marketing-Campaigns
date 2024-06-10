@@ -203,19 +203,59 @@ Correlations
 
 
 
+## Modelling 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/42c5841f-e557-4317-88bb-d212b933de59) 
+### 1) Base Model using Random Forest Classifer
+One of my key goal is to find a good balance of Precision and Recall indicating by F1 Score.  The F1 score is low. 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/55775157-cf6a-4ec8-b944-b369a73de8d3) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee)
 
 
-
-   
-6. List of Important Features (using Random Forest)
+Before running cross validation and Grid Search to find the best model
+I analyze the feature importance using Random Forest.
+List of Important Features (using Random Forest)
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/285becbc-96f6-4ecd-b8a1-787877a3c004) 
+
+### 2) 
+Then I chose top 20, and top 15, and top 12. I found top 15 is the best model in term of F1-Score. 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/27b9d63b-cea7-4800-97ca-2caeaf613d20) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9914640e-ba75-4c46-8cdc-2f427776a216) 
+
+
+### 3) Find Optimal threshold to meet business goal  
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/fadbdff6-69c8-4676-a70c-c5100303907d) 
+
+
+### 4) Cross Validations and Grid Search to find the statble and best model
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/88dabc67-f048-4bb9-8f08-9b0588e6add5) 
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/14df72d3-9d11-4b74-b9f1-d8b74d0ff846) 
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a3803ddf-d15a-41b3-8329-acc60fcfe9ce) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
