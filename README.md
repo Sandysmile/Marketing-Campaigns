@@ -242,6 +242,14 @@ Then I chose top 20, and top 15, and top 12. I found top 15 is the best model in
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a3803ddf-d15a-41b3-8329-acc60fcfe9ce) 
 
 
+### 5) Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5a866130-ab48-4ab0-9832-5a859df6d1cb) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/1bf057dc-1ac2-4142-b1c6-9dfda42c9e99) 
+
+
+
+
 
 
 
