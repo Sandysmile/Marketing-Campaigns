@@ -184,22 +184,32 @@ Correlations
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5bece7af-2f3a-4673-8923-c367d34521a5) 
 
 
-3. encoding all categorical variables
+3. encoding all categorical variables. Now the full dataset including 67 coded variables.
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
 
 
 
-4. run a correlation based on a filter ( when correlation coefficient >0.1)
+4. run a correlation based on a filter ( when correlation coefficient >0.1) to identify relative important variables
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
 
 
 
-Final Dataset for Modelling
+5. Final Dataset for Modelling (
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
+
+
+
+
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/42c5841f-e557-4317-88bb-d212b933de59) 
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/55775157-cf6a-4ec8-b944-b369a73de8d3) 
+
 
 
    
