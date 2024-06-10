@@ -202,16 +202,19 @@ Correlations
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
 
 
+6. Spliting the final dataset
+7. Scaling the final dataset 
 
 ## Modelling 
 
-
 ### 1) Base Model using Random Forest Classifer
-One of my key goal is to find a good balance of Precision and Recall indicating by F1 Score.  The F1 score is low. 
+One of my key goal is to find a good balance of Precision and Recall indicating by F1 Score.  The F1 score is low despite I using class_weight = 'balanced' I
+Guess I have to do resampling or some other types of sampling skill. overall F1 scorea are all low. 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee)
 
+Due to my limited computation power. I preselect features to run the models. 
 
 Before running cross validation and Grid Search to find the best model
 I analyze the feature importance using Random Forest.
@@ -219,8 +222,7 @@ List of Important Features (using Random Forest)
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/285becbc-96f6-4ecd-b8a1-787877a3c004) 
 
-### 2) 
-Then I chose top 20, and top 15, and top 12. I found top 15 is the best model in term of F1-Score. 
+### 2) Then I chose top 20, top 15, and top 12. I found top 15 is the best model in term of F1-Score. 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/27b9d63b-cea7-4800-97ca-2caeaf613d20) 
 
