@@ -139,7 +139,7 @@ Why? Previous campaign outcomes significantly influence subscription rates.
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
-#### Findings: 
+#### Key Findings frome Numerical Variables
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
 
@@ -166,6 +166,47 @@ Correlations
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
 
+
+#### Steps/Actions to Prepare Varibles or/and feature Engineering 
+
+
+1. log Duration (Logistic Regression)
+   
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c577a06e-a329-405a-a7cb-ff459c08f6fa) 
+
+
+2. segementation of variables/Create new cateogircal variables. (explorations)
+   
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/af067870-fc14-4b9c-a93e-c3735aa4d265)
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a3beb1a5-244d-4463-b943-b04cae5214db) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5bece7af-2f3a-4673-8923-c367d34521a5) 
+
+
+3. encoding all categorical variables
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
+
+
+
+4. run a correlation based on a filter ( when correlation coefficient >0.1)
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
+
+
+
+Final Dataset for Modelling
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/42c5841f-e557-4317-88bb-d212b933de59) 
+
+
+   
+6. List of Important Features (using Random Forest)
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/285becbc-96f6-4ecd-b8a1-787877a3c004) 
 
 
 
