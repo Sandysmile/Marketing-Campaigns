@@ -242,53 +242,40 @@ Then I chose top 20, and top 15, and top 12. I found top 15 is the best model in
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a3803ddf-d15a-41b3-8329-acc60fcfe9ce) 
 
 
-### 5) Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers
+### 5) Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers 
+
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5a866130-ab48-4ab0-9832-5a859df6d1cb) 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/1bf057dc-1ac2-4142-b1c6-9dfda42c9e99) 
 
 
 
+## Model Evaluation Criteria
+
+1) Threshold Consideration
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/23c751c6-c8ec-4aca-87f2-1163a315e3ff) 
+
+2) Precision and Recall Curve with Optimal Threshhold
+   
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/10feb1f5-205f-43a5-a6f3-2c9829d6eb55)
+
+
+3) ROC Curve
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/808ed417-6825-4318-a70e-2ff657d4f23a) 
+
+
+4) Training and Testing Accurancy and Computing Time
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/933c7dca-9e8a-446c-b3e5-696702eee519) 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Final Model Comparisions:
-
-
-
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/933c7dca-9e8a-446c-b3e5-696702eee519)
-
-
+Recomended Model 
+Random Forest
 
 
 
