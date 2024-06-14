@@ -76,7 +76,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome ( see the charts above)
    
 
-2) Loan, housing, and day of the week do not contribute to the success at all; their success rates are equal to the overall success rate. ( see the charts below)
+2) Loan, housing, and day of the week do not significantly contribute to the subscribtion success; their success rates are equal to the overall success rate. (see the charts below)
    
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d26270bc-94c7-4bde-a34a-9e07a585cfba)
@@ -91,44 +91,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 #### Categorical Variables: Next Steps/Actions fpr Data Preparation and Feature Engineering. 
 
-**Job Category: Encoding 
-Why? Different job categories have varying subscription rates.
-
-**Marital Status: Encoding
-
-Why? Marital status shows some influence on subscription rates.
-
-**Education: Encoding
-
-Why: Different education levels have varying subscription rates.
-
-**Default: Feature Importance: (removed)
-
-Why? The default status has minimal influence on subscription rates.
-
-**Housing: Encoding
-
-Why? Housing loan status shows some influence on subscription rates.
-
-** Loan: Encoding
-
-Why? Personal loan status shows some influence on subscription rates.
-
-** Contact: Encoding
-
-Why? Different contact types have varying subscription rates.
-
-** Month: Encoding
-
-Why? The month of contact has a significant influence on subscription rates.
-
-**Day of the Week: Feature Importance (removed) 
-
-Why? The day of the week of contact has minimal influence on subscription rates.
-
-**Poutcome (Previous Outcome): Encoding
-
-Why? Previous campaign outcomes significantly influence subscription rates. 
+encode all cateogorical variables for inital modelling process
 
 
 
@@ -140,7 +103,7 @@ Why? Previous campaign outcomes significantly influence subscription rates.
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
-#### Key Findings frome Numerical Variables 
+#### Findings from Numerical Variables 
 
 
 1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses.
@@ -162,11 +125,18 @@ Why? Previous campaign outcomes significantly influence subscription rates.
 
 
 
+Further Data Analysis Actions:
 
-T-TESTS 
+1) T-TESTS 
+
+It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
+
+Al
+
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
+it 
 
 Correlations 
 
@@ -177,7 +147,7 @@ Correlations
 
 ## Data Preparation Key Actions/ Feature Engineering 
 
-1. log Duration (Logistic Regression)
+1. log Duration ( for Logistic Regression)
    
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c577a06e-a329-405a-a7cb-ff459c08f6fa) 
