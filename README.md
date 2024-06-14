@@ -91,11 +91,11 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 #### Categorical Variables: Next Steps/Actions fpr Data Preparation and Feature Engineering. 
 
-encode all cateogorical variables for inital modelling process
+     ** Encode all cateogorical variables for inital modelling process **
 
 
 
-#### EDA 2)Explore the relationships among Numerical Vraible and Response Variable 
+#### EDA 2)Explore the relationships among Numerical Varibles and Response Variable 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
 
