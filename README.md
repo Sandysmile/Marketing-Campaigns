@@ -70,7 +70,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 
 
-##### Key Insights and Next Steps for Data Preparation/Feature Engineering/Eeature Selection
+##### Key Insights and Next Steps for Data Preparation/Feature Engineering/Feature Selection
 
 
 1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome ( see the charts above)
@@ -95,10 +95,13 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 
 
-#### EDA 2)Explore on Numerical Varibles
+#### EDA 2)Explore on Numerical Varibles 
+
 
 1) Histogram
+   
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
+
 
   *Age:
 
@@ -151,47 +154,45 @@ Customer Contact Patterns: The plots for campaign and previous suggest that cust
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
-#### Findings from Numerical Variables for feature selections
+2) Histograms with Boxplots 
+List of Findings from Numerical Variables
+
+   1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below)
 
 
-1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses.
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/3310e747-e38c-4de1-9d84-1791e75f7b02) 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/3310e747-e38c-4de1-9d84-1791e75f7b02) 
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef850449-a748-41a4-8e1f-2e4a0394ace5) 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef850449-a748-41a4-8e1f-2e4a0394ace5) 
-
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
 
 
 
-2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
-3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
-4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
+  2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
+  3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
+  4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
    
 
 
-Further Data Analysis for Feature Selections
+#### EDA 3) Further Analysis for Feature Selection
 
 1) T-TESTS 
 
 It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
 
-
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
 
-
-2) Correlations for Feature Selections
-
+2) Correlations
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
+
 
 
 ## Feature Engineering Actions
