@@ -74,17 +74,22 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 ##### Key Insights and Next Steps for Data Preparation or Feature Engineering 
 
+
 1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
+   
+
 
 2) Loan, housing, and day of the week do not contribute to the success at all; their success rates are equal to the overall success rate.
+   
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d26270bc-94c7-4bde-a34a-9e07a585cfba)
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9434a7fd-bbea-4007-8df2-d1ee89509509)
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9260ba25-a3a6-48e6-83bf-daec649f60b1)
+   
 
-3) Marital status and default have a slight influence on the outcome.
+4) Marital status and default have a slight influence on the outcome.
 
 
 #### Categorical Variables: Next Steps/Actions fpr Data Preparation and Feature Engineering. 
@@ -138,12 +143,14 @@ Why? Previous campaign outcomes significantly influence subscription rates.
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
-#### Key Findings frome Numerical Variables
+#### Key Findings frome Numerical Variables 
+
 
 1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses.
 2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
 3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
 4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
+   
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
 
