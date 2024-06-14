@@ -1,4 +1,4 @@
-# Practical Application III: Apply and Compare 5 Common Classifiers to Predict Subscription/Direct Deposit Outcomes in Banking Marketing Campaigns
+# Practical Application III: Apply and Compare 5 Common Classifiers to Predict Subscription/Direct Deposit Outcomes from Banking Marketing Campaigns
 
 Overview/Learning Goal: 
 
