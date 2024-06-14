@@ -2,7 +2,7 @@
 
 ## Overview/Learning Goal: 
 
-In this practical application, the goal is to compare the performance of classifiers including K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines, and Random Forest. 
+In this practical application, the goal is to compare the performance of 6 classifiers including K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines, and Random Forest. 
 A dataset related to marketing bank products over the telephone is used for the applicaiton. 
 
 ## Methodology: CRISP-DM Framework 
