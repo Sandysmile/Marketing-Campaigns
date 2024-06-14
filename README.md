@@ -1,6 +1,6 @@
 # Practical Application III: Apply and Compare 5 Common Classifiers to Predict Subscription/Direct Deposit Outcomes from Banking Marketing Campaigns
 
-Overview/Learning Goal: 
+## Overview/Learning Goal: 
 
 In this practical application, the goal is to compare the performance of classifiers including K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines, and Random Forest. 
 A dataset related to marketing bank products over the telephone is used for the applicaiton. 
@@ -17,7 +17,7 @@ In today's competitive market, optimizing the efficiency and effectiveness of di
 
 ### Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted. 
 
-### Two Majior Business Benefits: 
+### Hilighted Business Benefits: 
 
 1. Targeted Campaigns and Resource Optimization: Machine learning predicts high-potential leads with high precision and recall, enabling us to focus marketing efforts and resources—such as time and human effort—on the most promising clients. This targeted approach enhances the effectiveness and efficiency of our campaigns.
 
