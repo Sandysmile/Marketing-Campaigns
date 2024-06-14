@@ -54,7 +54,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 #### 1)Explore the relationships among Categorical Varaibles and Response Variable 
 
 
-##### Findings 
+##### List of Findings (see the tiles of the Charts below) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/4d07a0f4-a351-45c5-9ed7-aa2e49cd1d9b) 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b833d6bf-625f-431f-bda2-5816ce588909) 
@@ -70,16 +70,13 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 
 
-
-
 ##### Key Insights and Next Steps for Data Preparation or Feature Engineering 
 
 
-1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
+1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome ( see the charts above)
    
 
-
-2) Loan, housing, and day of the week do not contribute to the success at all; their success rates are equal to the overall success rate.
+2) Loan, housing, and day of the week do not contribute to the success at all; their success rates are equal to the overall success rate. ( see the charts below)
    
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d26270bc-94c7-4bde-a34a-9e07a585cfba)
@@ -88,9 +85,9 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9260ba25-a3a6-48e6-83bf-daec649f60b1)
    
-
-4) Marital status and default have a slight influence on the outcome.
-
+   
+3) Marital status and default have a slight influence on the outcome.
+   
 
 #### Categorical Variables: Next Steps/Actions fpr Data Preparation and Feature Engineering. 
 
