@@ -140,6 +140,11 @@ Why? Previous campaign outcomes significantly influence subscription rates.
 
 #### Key Findings frome Numerical Variables
 
+1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses.
+2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
+3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
+4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
+
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
 
 
