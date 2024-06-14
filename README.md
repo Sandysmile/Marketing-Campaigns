@@ -100,43 +100,44 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 1) Histogram
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
 
-*Age:
+  *Age:
 
-Most of the observations are clustered around the younger ages, with a significant drop-off as age increases. This suggests that the majority of the customers are younger.
+  Most of the observations are clustered around the younger ages, with a significant drop-off as age increases. This suggests that the majority of the customers are younger.
 
-*Campaign:
+  *Campaign:
 
-The number of contacts performed during this campaign is highly skewed towards fewer contacts, with most customers being contacted only a few times. Very few customers are contacted many times.
+  The number of contacts performed during this campaign is highly skewed towards fewer contacts, with most customers being contacted only a few times. Very few customers are contacted many times.
 
-*Previous:
+  *Previous:
 
-Most customers have not been contacted in previous campaigns (value is 0), and very few have been contacted more than once or twice in previous campaigns.
+  Most customers have not been contacted in previous campaigns (value is 0), and very few have been contacted more than once or twice in previous campaigns.
 
-Emp.var.rate (Employment Variation Rate):
+  *Emp.var.rate (Employment Variation Rate):
 
-The employment variation rate shows a distribution centered around a few key values, with a significant number of observations at 1, indicating relatively stable employment conditions.
+  The employment variation rate shows a distribution centered around a few key values, with a significant number of observations at 1, indicating relatively stable employment conditions.
 
-Pdays:
+  *Pdays:
 
-**The plot shows that most customers have not been contacted in previous campaigns within the last 1000 days, suggesting a large gap between contacts for many customers.
+  The plot shows that most customers have not been contacted in previous campaigns within the last 1000 days, suggesting a large gap between contacts for many customers.
 
-Cons.price.idx (Consumer Price Index):
+  *Cons.price.idx (Consumer Price Index):
 
-The consumer price index values are clustered around a few key values, indicating specific periods of consumer pricing conditions.
+  The consumer price index values are clustered around a few key values, indicating specific periods of consumer pricing conditions.
 
-Cons.conf.idx (Consumer Confidence Index):
+  *Cons.conf.idx (Consumer Confidence Index):
 
-The consumer confidence index values are also clustered around a few key values, suggesting periods of specific consumer confidence conditions.
+  The consumer confidence index values are also clustered around a few key values, suggesting periods of specific consumer confidence conditions.
 
-Euribor3m (Euribor 3 Month Rate):
+  *Euribor3m (Euribor 3 Month Rate):
 
-The Euribor rate distribution shows that most observations are centered around higher values, indicating periods of higher interest rates.
+  The Euribor rate distribution shows that most observations are centered around higher values, indicating periods of higher interest rates.
 
-Nr.employed (Number of Employees):
+  *Nr.employed (Number of Employees):
 
-The number of employees shows a distribution centered around a few key values, suggesting periods with specific employment levels.
+  The number of employees shows a distribution centered around a few key values, suggesting periods with specific employment levels.
 
-Insights and Actions for Feature Engieering
+
+Insights and Actions for Data Preparation/Feature Engineering
 
 Skewed Distributions:
 Several features, such as pdays, previous, and campaign, show highly skewed distributions, indicating that most customers fall into a narrow range for these features.
@@ -154,10 +155,7 @@ Customer Contact Patterns: The plots for campaign and previous suggest that cust
 
 
 1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses.
-2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
-3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
-4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
-   
+
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
 
@@ -172,27 +170,31 @@ Customer Contact Patterns: The plots for campaign and previous suggest that cust
 
 
 
-Further Data Analysis Actions:
+2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
+3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
+4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
+   
+
+
+Further Data Analysis for Feature Selections
 
 1) T-TESTS 
 
 It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
 
-Al
-
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
-it 
 
-Correlations 
+
+2) Correlations for Feature Selections
 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
 
 
-## Data Preparation Key Actions/ Feature Engineering 
+## Feature Engineering Actions
 
 1. log Duration ( for Logistic Regression)
    
@@ -200,7 +202,7 @@ Correlations
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c577a06e-a329-405a-a7cb-ff459c08f6fa) 
 
 
-2. segementation of variables/Create new cateogircal variables. (explorations)
+2. Segementation of variables/Create new cateogircal variables. (explorations)
    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/af067870-fc14-4b9c-a93e-c3735aa4d265)
 
@@ -232,7 +234,7 @@ Correlations
 
 ## Modelling 
 
-### 1) Base Model using Random Forest Classifer
+### 1) Base Model using Random Forest Classifer to select top significant feature. 
 One of my key goal is to find a good balance of Precision and Recall indicating by F1 Score.  The F1 score is low despite I using class_weight = 'balanced' I
 Guess I have to do resampling or some other types of sampling skill. overall F1 scorea are all low. 
 
