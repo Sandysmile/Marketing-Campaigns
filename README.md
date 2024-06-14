@@ -70,7 +70,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 
 
-##### Key Insights and Next Steps for Data Preparation or Feature Engineering 
+##### Key Insights and Next Steps for Data Preparation/Feature Engineering/Eeature Selection
 
 
 1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome ( see the charts above)
@@ -95,15 +95,62 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 
 
-#### EDA 2)Explore the relationships among Numerical Varibles and Response Variable 
+#### EDA 2)Explore on Numerical Varibles
 
+1) Histogram
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
+
+*Age:
+
+Most of the observations are clustered around the younger ages, with a significant drop-off as age increases. This suggests that the majority of the customers are younger.
+
+*Campaign:
+
+The number of contacts performed during this campaign is highly skewed towards fewer contacts, with most customers being contacted only a few times. Very few customers are contacted many times.
+
+*Previous:
+
+Most customers have not been contacted in previous campaigns (value is 0), and very few have been contacted more than once or twice in previous campaigns.
+
+Emp.var.rate (Employment Variation Rate):
+
+The employment variation rate shows a distribution centered around a few key values, with a significant number of observations at 1, indicating relatively stable employment conditions.
+
+Pdays:
+
+**The plot shows that most customers have not been contacted in previous campaigns within the last 1000 days, suggesting a large gap between contacts for many customers.
+
+Cons.price.idx (Consumer Price Index):
+
+The consumer price index values are clustered around a few key values, indicating specific periods of consumer pricing conditions.
+
+Cons.conf.idx (Consumer Confidence Index):
+
+The consumer confidence index values are also clustered around a few key values, suggesting periods of specific consumer confidence conditions.
+
+Euribor3m (Euribor 3 Month Rate):
+
+The Euribor rate distribution shows that most observations are centered around higher values, indicating periods of higher interest rates.
+
+Nr.employed (Number of Employees):
+
+The number of employees shows a distribution centered around a few key values, suggesting periods with specific employment levels.
+
+Insights and Actions for Feature Engieering
+
+Skewed Distributions:
+Several features, such as pdays, previous, and campaign, show highly skewed distributions, indicating that most customers fall into a narrow range for these features.
+
+Clustered Values:
+Features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed show values clustered around specific points, suggesting stable economic conditions during the data collection period.
+
+Customer Contact Patterns: The plots for campaign and previous suggest that customers are rarely contacted multiple times, both in the current and previous campaigns.
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
-#### Findings from Numerical Variables 
+#### Findings from Numerical Variables for feature selections
 
 
 1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses.
