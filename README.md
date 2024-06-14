@@ -195,15 +195,15 @@ It determines whether the means of numerical variables are significantly differe
 
 
 
-## Feature Engineering Actions
+## Feature Engineering /Selection Actions
 
-1. log Duration ( for Logistic Regression)
+1. log Duration ( Mainly for Logistic Regression)
    
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c577a06e-a329-405a-a7cb-ff459c08f6fa) 
 
 
-2. Segementation of variables/Create new cateogircal variables. (explorations)
+2. Segementation of Numerical Variables/Create New Cateogircal Variables.
    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/af067870-fc14-4b9c-a93e-c3735aa4d265)
 
@@ -212,32 +212,36 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5bece7af-2f3a-4673-8923-c367d34521a5) 
 
 
-3. encoding all categorical variables. Now the full dataset including 67 coded variables.
+3. Encode all Categorical variables. Now the full dataset include 67 coded variables.
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
 
 
 
-4. run a correlation based on a filter ( when correlation coefficient >0.1) to identify relative important variables
+4. Run a correlation based on a filter (when correlation coefficient >0.1) to identify relative important variables
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
 
 
 
-5. Final Dataset for Modelling (
+5. Final Dataset for Modelling
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
 
+6: Feature Selection Strategy  
+** Instead of dropping variables from previous EDA, I decide to try something new: using Random Forest Classifer to help me select top significant features.
+Due to my limited computation power. I preselect features to run the models. 
 
-6. Spliting the final dataset
-7. Scaling the final dataset 
+## Modelling Prework
+Split the final dataset
+Scale the final dataset 
 
 ## Modelling 
+ 
+### 1) Base Model (using Random Forest Classifer to select top significant features). 
 
-### 1) Base Model using Random Forest Classifer to select top significant feature. 
-One of my key goal is to find a good balance of Precision and Recall indicating by F1 Score.  The F1 score is low despite I using class_weight = 'balanced' I
-Guess I have to do resampling or some other types of sampling skill. overall F1 scorea are all low. 
+One of my key goal is to find a good balance of Precision and Recall indicating by F1 Score.  The F1 score is low despite I using class_weight = 'balanced' 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee)
