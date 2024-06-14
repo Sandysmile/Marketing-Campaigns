@@ -17,13 +17,11 @@ In today's competitive market, optimizing the efficiency and effectiveness of di
 
 ### Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted. 
 
-### Business Benefits: 
+### Two Majior Business Benefits: 
 
-1. Targeted Campaigns: By predicting which clients are most likely to respond positively, we can focus our efforts on high-potential leads. This means more effective use of our marketing budget and resources.
-2. Resource Optimization: ML helps us understand the factors that drive successful client subscriptions. This insight allows us to allocate our resources—such as human effort, phone calls, and time—more efficiently. Instead of a broad approach, we can tailor our strategies to where they are most effective. 
-3. Improved Customer Engagement: By identifying the key characteristics of clients who are likely to subscribe, we can personalize our marketing messages and offers. This leads to higher engagement rates and better customer satisfaction.For example, targeting specific groups like retirees with tailored offers.
-4. Cost Efficiency: Focusing on the most promising leads reduces wasted efforts and costs associated with less effective campaigns. ML helps us find the balance between quality and affordability when selecting potential customers ensuring high precision and recall in marketing efforts.
-5. Strategic Insights: The data-driven insights from ML provide a deeper understanding of our customer base and campaign performance. These insights enable us to refine our strategies continually, leading to ongoing improvements in our marketing effectiveness by evaluating, deploying, monitoring, and tuning our models to ensure optimal performance and continuous improvement.
+1. Targeted Campaigns and Resource Optimization: Machine learning predicts high-potential leads with high precision and recall, enabling us to focus marketing efforts and resources—such as time and human effort—on the most promising clients. This targeted approach enhances the effectiveness and efficiency of our campaigns.
+
+2. Improved Customer Engagement: By identifying key client characteristics, we can personalize marketing messages and offers, leading to higher engagement and satisfaction. Tailored strategies, such as specific offers for retirees, improve customer interactions and outcomes.
 
 By leveraging machine learning and CRIP methodology, we can continousely transform our marketing campaigns from broad, generalized efforts to highly targeted and efficient operations, even highly personalized campaigns. This not only boosts our successful bank product subsribers but also ensures that we are using our resources in the most impactful way possible.
 
@@ -31,11 +29,12 @@ By leveraging machine learning and CRIP methodology, we can continousely transfo
 
 ### Background: 
 
-The dataset comes from the UCI Machine Learning repository link. The data is from a Portugese banking institution and is a collection of the results of multiple marketing campaigns. We will make use of the article accompanying the dataset here for more information on the data and features. To gain a better understanding of the data, please read the information provided in the UCI link above, and examine the Materials and Methods section of the paper. How many marketing campaigns does this data represent? 
+The dataset comes from the UCI Machine Learning repository. It is collected from a Portugese banking institution based on a collection of marketing campaigns results using their contact center.
+The primary marketing channel was telephone calls by human agents, sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
 
-The dataset was collected from a Portuguese bank that conducted direct marketing campaigns using their contact center. The primary marketing channel was telephone calls by human agents, sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
+The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. 
 
-The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11 % success rate. 
+Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11 % success rate. 
 
 ### Data Dictionary: 
 
