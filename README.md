@@ -101,6 +101,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
    Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights. 
     
    Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness. 
+   
    Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations. 
     
 
