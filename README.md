@@ -1,9 +1,8 @@
-# Practical Application III: Apply and Compare 5 Common Classifiers to Predict Subscription/Direct Deposit Outcomes from Banking Marketing Campaigns
+# Practical Application III: Apply and Compare 6 Common Classifiers to Predict Subscription/Direct Deposit Outcomes from Banking Marketing Campaigns 
 
 ## Overview/Learning Goal: 
 
-In this practical application, the goal is to compare the performance of 6 classifiers including K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines, and Random Forest. 
-A dataset related to marketing bank products over the telephone is used for the applicaiton. 
+In this practical application, the goal is to compare the performance of six classifiers: K Nearest Neighbor, Logistic Regression, Decision Trees, Support Vector Machines, and Random Forest. The dataset used is related to marketing bank products over the telephone.
 
 ## Methodology: CRISP-DM Framework 
 
@@ -11,30 +10,32 @@ A dataset related to marketing bank products over the telephone is used for the 
 
 
 
-## Business Understandings: Context, Goal and Benefits
+## Business Understandings: Context, Goal and Benefits 
+
 
 In today's competitive market, optimizing the efficiency and effectiveness of direct marketing campaigns is crucial for increasing customer engagement and maximizing returns on business investment.
 
-### Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted. 
+Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted.
 
-### Hilighted Business Benefits: 
+### Highlighted Business Benefits:
 
-1. Targeted Campaigns and Resource Optimization: Machine learning predicts high-potential leads with high precision and recall, enabling us to focus marketing efforts and resources—such as time and human effort—on the most promising clients. This targeted approach enhances the effectiveness and efficiency of our campaigns.
+    1) Targeted Campaigns and Resource Optimization: Machine learning predicts high-potential leads with high precision and recall, enabling us to focus marketing efforts and resources on the most promising clients. This targeted approach enhances the 
+       effectiveness and efficiency of our campaigns. 
+       
+    2) Improved Customer Engagement: By identifying key client characteristics, we can personalize marketing messages and offers, leading to higher engagement and satisfaction. Tailored strategies, such as specific offers for retirees, improve customer 
+       interactions and outcomes. 
+       
+     
+By leveraging machine learning and the CRISP-DM methodology, we can transform our marketing campaigns from broad, generalized efforts to highly targeted and efficient operations, even highly personalized campaigns. This boosts our successful bank product subscribers and ensures optimal resource usage. 
 
-2. Improved Customer Engagement: By identifying key client characteristics, we can personalize marketing messages and offers, leading to higher engagement and satisfaction. Tailored strategies, such as specific offers for retirees, improve customer interactions and outcomes.
-
-By leveraging machine learning and CRIP methodology, we can continousely transform our marketing campaigns from broad, generalized efforts to highly targeted and efficient operations, even highly personalized campaigns. This not only boosts our successful bank product subsribers but also ensures that we are using our resources in the most impactful way possible.
 
 ## Data Understandings: Backgound, Data Dictonoary, Quality Check, and EDA 
 
 ### Background: 
 
-The dataset comes from the UCI Machine Learning repository. It is collected from a Portugese banking institution based on a collection of marketing campaigns results using their contact center.
-The primary marketing channel was telephone calls by human agents, sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
+The dataset comes from the UCI Machine Learning repository, collected from a Portuguese banking institution based on a collection of marketing campaign results using their contact center. The primary marketing channel was telephone calls by human agents, sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
 
-The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. 
-
-Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11 % success rate. 
+The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11% success rate. 
 
 ### Data Dictionary: 
 
@@ -43,19 +44,25 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 ### Data Quality Quick Check: 
 
-1) 0 null values
-2) 12 duplicates
-3) unbalanced dataset (see the chart below)
+   1) 0 null values
+   2) 12 duplicates
+   3) unbalanced dataset (11% of Success Rate)
    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/2498bc86-9725-4d65-be43-3874b9fe068d) 
 
 
-### EDA
-#### 1)Explore on Categorical Varaibles and Response Variable 
+### Exploratory Data Anlaysis (EDA) 
 
+1. Catogrical Variable and Response Variables.
 
-##### List of Findings (see the titles of the Charts below) 
+    Key Findings: Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome. 
 
+    Non-significant Features: Loan, housing, and day of the week do not significantly contribute to the subscription success.
+
+    Feature Engineering: Encode all categorical variables for basic models. 
+
+   
+    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/4d07a0f4-a351-45c5-9ed7-aa2e49cd1d9b) 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b833d6bf-625f-431f-bda2-5816ce588909) 
 
@@ -68,133 +75,84 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/e915aed8-7287-4967-a830-a205f1fccf95) 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b87e8b89-4f86-4a18-906e-2f726900d0c4)
 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d26270bc-94c7-4bde-a34a-9e07a585cfba)
 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9434a7fd-bbea-4007-8df2-d1ee89509509)
 
-##### Key Insights and Planned Steps for Data Preparation/Feature Engineering/Feature Selection
-
-
-1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome ( see the charts above)
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9260ba25-a3a6-48e6-83bf-daec649f60b1)
    
 
-2) Loan, housing, and day of the week do not significantly contribute to the subscribtion success; their success rates are equal to the overall success rate. (see the charts below)
-   
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d26270bc-94c7-4bde-a34a-9e07a585cfba)
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9434a7fd-bbea-4007-8df2-d1ee89509509)
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9260ba25-a3a6-48e6-83bf-daec649f60b1)
-   
-   
-3) Marital status and default have a slight influence on the outcome.
-   
-
-4) Encode all cateogorical variables for inital modelling process
 
 
+2. Numerical Variable and Response Variables.
 
-#### EDA 2)Explore on Numerical Varibles 
+2.1 Histogram
 
-
-1) Histogram
-   
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
-
-
-
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
 
-2) Histogram with Boxplot
+2.2 Histogram with Boxplot
    
+   Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
+   Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights. 
+    
+   Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness. 
+   Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations. 
+    
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
 
 
-   1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/3310e747-e38c-4de1-9d84-1791e75f7b02) 
 
 
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef850449-a748-41a4-8e1f-2e4a0394ace5) 
 
 
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/3310e747-e38c-4de1-9d84-1791e75f7b02) 
-
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef850449-a748-41a4-8e1f-2e4a0394ace5) 
-
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
-
-
-
-  2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
-  3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
-  4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
-     
-3) T-Tests
-
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
+    
+2.3 T-Tests
 
 It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
 
-4) Correlations
-
+2.4 Correlations
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
    
 
-5) Findings from Numerical Variables. 
+2.5 Findings from Numerical Variables. 
 
-  *Age:
+    Age: Most customers are younger. 
+    
+    Campaign: Highly skewed towards fewer contacts. 
+    
+    Previous: Most customers have not been contacted in previous campaigns. 
+    
+    Employment Variation Rate: Indicates relatively stable employment conditions. 
+    
+    
+    Pdays: Large gap between contacts for many customers. 
+    
+    Consumer Price Index and Consumer Confidence Index: Clustered around specific periods.
+    
+    Euribor 3 Month Rate: Indicates periods of higher interest rates. 
+    
+    Number of Employees: Suggests periods with specific employment levels. 
+    
 
-  Most of the observations are clustered around the younger ages, with a significant drop-off as age increases. This suggests that the majority of the customers are younger.
+2.6 Proposed Actions for Data Preparation/Feature Engineering
 
-  *Campaign:
-
-  The number of contacts performed during this campaign is highly skewed towards fewer contacts, with most customers being contacted only a few times. Very few customers are contacted many times.
-
-  *Previous:
-
-  Most customers have not been contacted in previous campaigns (value is 0), and very few have been contacted more than once or twice in previous campaigns.
-
-  *Emp.var.rate (Employment Variation Rate):
-
-  The employment variation rate shows a distribution centered around a few key values, with a significant number of observations at 1, indicating relatively stable employment conditions.
-
-  *Pdays:
-
-  The plot shows that most customers have not been contacted in previous campaigns within the last 1000 days, suggesting a large gap between contacts for many customers.
-
-  *Cons.price.idx (Consumer Price Index):
-
-  The consumer price index values are clustered around a few key values, indicating specific periods of consumer pricing conditions.
-
-  *Cons.conf.idx (Consumer Confidence Index):
-
-  The consumer confidence index values are also clustered around a few key values, suggesting periods of specific consumer confidence conditions.
-
-  *Euribor3m (Euribor 3 Month Rate):
-
-  The Euribor rate distribution shows that most observations are centered around higher values, indicating periods of higher interest rates.
-
-  *Nr.employed (Number of Employees):
-
-  The number of employees shows a distribution centered around a few key values, suggesting periods with specific employment levels.
-
-
-6) Proposed Actions for Data Preparation/Feature Engineering
-
-Log certain variable to correct their Skewed Distributions:
-Several features, such as pdays, previous, and campaign, show highly skewed distributions, indicating that most customers fall into a narrow range for these features.
-
-Bin Some of Numerical Varaiables to Represent their Clustered Values:
-Features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed show values clustered around specific points, suggesting stable economic conditions during the data collection period.
-
-Customer Contact Patterns: The plots for campaign and previous suggest that customers are rarely contacted multiple times, both in the current and previous campaigns.
-
+    Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign).
+    Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
+    Customer Contact Patterns: Implement feature engineering actions for categorical and numerical variables. 
+    
 
 ## Implement Feature Engineering Actions for categorical and numerical Variables
 
