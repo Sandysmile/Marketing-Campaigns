@@ -8,13 +8,13 @@ In this practical application, the goal is to compare the performance of six cla
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/26a9f4ba-b87d-4319-ba53-fb00675ec3eb) 
 
 
-## Business Understandings: Context, Goal and Benefits 
+## 1 Business Understandings: Context, Goal and Benefits 
 
 In today's competitive market, optimizing the efficiency and effectiveness of direct marketing campaigns is crucial for increasing customer engagement and maximizing returns on business investment.
 
 Business/ML Goal: Use ML techniques to predict which clients are most likely to subscribe to a deposit after being contacted.
 
-### Highlighted Business Benefits:
+### 1.1 Highlighted Business Benefits:
 
     1) Targeted Campaigns and Resource Optimization: Machine learning predicts high-potential leads with high precision and recall, enabling us to focus marketing efforts and resources on the most promising clients. This targeted approach enhances the 
        effectiveness and efficiency of our campaigns. 
@@ -26,10 +26,10 @@ Business/ML Goal: Use ML techniques to predict which clients are most likely to 
 By leveraging machine learning and the CRISP-DM methodology, we can transform our marketing campaigns from broad, generalized efforts to highly targeted and efficient operations, even highly personalized campaigns. This boosts our successful bank product subscribers and ensures optimal resource usage. 
 
 
-## Data Understandings: Backgound, Data Dictonoary, Quality Check, and EDA 
+## 2 Data Understandings: Backgound, Data Dictonoary, Quality Check, and EDA 
 
 
-### Background: 
+### 2.1 Background: 
 
     The dataset comes from the UCI Machine Learning repository, collected from a Portuguese banking institution based on a collection of marketing campaign results using their contact center. The primary marketing channel was telephone calls by human agents, 
     sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
@@ -37,12 +37,12 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
     The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the 
     campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11% success rate. 
 
-### Data Dictionary: 
+### 2.2 Data Dictionary: 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/e95d693c-385e-41ee-9cdf-797b3bffbf47)
 
 
-### Data Quality Quick Check: 
+### 2.3 Data Quality Quick Check: 
 
    1) 0 null values
    2) 12 duplicates
@@ -51,9 +51,9 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/2498bc86-9725-4d65-be43-3874b9fe068d) 
 
 
-### Exploratory Data Anlaysis (EDA) 
+### 2.4 Exploratory Data Anlaysis (EDA) 
 
-1. Catogrical Variable and Response Variables.
+2.4.1 Catogrical Variable and Response Variables.
 
    Key Findings: Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome. 
 
@@ -84,9 +84,9 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 
 
-2. Numerical Variable and Response Variables.
+2.4.2 Numerical Variable and Response Variables.
    
-2.1 Histogram
+2.4.2.1 Histogram
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
 
@@ -95,7 +95,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 
 
-2.2 Histogram with Boxplot
+2.4.2.2 Histogram with Boxplot
    
    Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
    Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights. 
@@ -117,7 +117,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
 
     
-2.3 T-Tests 
+2.4.3 T-Tests 
 
 
 It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
@@ -125,13 +125,13 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
 
-2.4 Correlations 
+2.4.4 Correlations 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
    
 
-2.5 Findings from Numerical Variables. 
+2.4.5 Findings from Numerical Variables. 
 
     Age: Most customers are younger. 
     
@@ -151,14 +151,14 @@ It determines whether the means of numerical variables are significantly differe
     Number of Employees: Suggests periods with specific employment levels. 
     
 
-2.6 Proposed Actions for Data Preparation
+2.4.6 Proposed Actions for Data Preparation
 
     Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign).
     Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
     Customer Contact Patterns: Implement feature engineering actions for categorical and numerical variables. 
     
 
-2.7 Feature Engieering Actions:
+2.4.7 Feature Engieering Actions:
 
 2.7.1 log Duration ( Mainly for Logistic Regression)
    
@@ -203,23 +203,17 @@ This is efficient given the robonest of Random Forst and My limited computationa
 
 ## Modelling 
 
-Modelling Objects:
-1) Find a model that can handle unbalanced data well. 
-2) Find a optimal threshold that balance recall and precision score. 
+1. Modelling Objects:
+   1) Find a model that can handle unbalanced data well. 
+   2) Find a optimal threshold that balance recall and precision score. 
 
 
-1) Base Model (using Random Forest Classifer to select top significant features). 
-
-
+2. Base Model (using Random Forest Classifer to select top significant features). 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee)
 
-Due to my limited computation power. I preselect features to run the models. 
-
-Before running cross validation and Grid Search to find the best model
-I analyze the feature importance using Random Forest.
-List of Important Features (using Random Forest)
+3. Feature Importance Analysis (using Random Forest)
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/285becbc-96f6-4ecd-b8a1-787877a3c004) 
 
