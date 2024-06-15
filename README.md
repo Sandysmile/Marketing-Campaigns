@@ -41,7 +41,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/e95d693c-385e-41ee-9cdf-797b3bffbf47)
 
 
-### Data Quality Check: 
+### Data Quality Quick Check: 
 
 1) 0 null values
 2) 12 duplicates
@@ -51,7 +51,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 
 ### EDA
-#### 1)Explore the relationships among Categorical Varaibles and Response Variable 
+#### 1)Explore on Categorical Varaibles and Response Variable 
 
 
 ##### List of Findings (see the titles of the Charts below) 
@@ -70,7 +70,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 
 
 
-##### Key Insights and Next Steps for Data Preparation/Feature Engineering/Feature Selection
+##### Key Insights and Planned Steps for Data Preparation/Feature Engineering/Feature Selection
 
 
 1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome ( see the charts above)
@@ -89,9 +89,7 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 3) Marital status and default have a slight influence on the outcome.
    
 
-#### Categorical Variables: Next Steps/Actions fpr Data Preparation and Feature Engineering. 
-
-     ** Encode all cateogorical variables for inital modelling process **
+4) Encode all cateogorical variables for inital modelling process
 
 
 
@@ -154,10 +152,12 @@ Customer Contact Patterns: The plots for campaign and previous suggest that cust
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
-2) Histograms with Boxplots 
-List of Findings from Numerical Variables
 
-   1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below)
+2) Histogram with Boxplot
+   
+
+
+   1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
 
 
    ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
@@ -176,6 +176,7 @@ List of Findings from Numerical Variables
   2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
   3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
   4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
+     
    
 
 
@@ -196,6 +197,8 @@ It determines whether the means of numerical variables are significantly differe
 
 
 ## Feature Engineering /Selection Actions
+
+Based on the findings from EDA 2) & EDA 1), The following steps are taken to prepare data for modelling:
 
 1. log Duration ( Mainly for Logistic Regression)
    
@@ -225,10 +228,12 @@ It determines whether the means of numerical variables are significantly differe
 
 
 
-5. Final Dataset for Modelling
+## Final Dataset for Modelling
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
 
+
+Summary for CRISP -DM
 6: Feature Selection Strategy  
 ** Instead of dropping variables from previous EDA, I decide to try something new: using Random Forest Classifer to help me select top significant features.
 Due to my limited computation power. I preselect features to run the models. 
