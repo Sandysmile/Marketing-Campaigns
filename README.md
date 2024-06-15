@@ -8,7 +8,7 @@ In this practical application, the goal is to compare the performance of six cla
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/26a9f4ba-b87d-4319-ba53-fb00675ec3eb) 
 
 
-## 1 Business Understandings: Context, Goal and Benefits 
+## Step#1: Business Understandings: Context, Goal and Benefits 
 
 In today's competitive market, optimizing the efficiency and effectiveness of direct marketing campaigns is crucial for increasing customer engagement and maximizing returns on business investment.
 
@@ -26,7 +26,7 @@ Business/ML Goal: Use ML techniques to predict which clients are most likely to 
 By leveraging machine learning and the CRISP-DM methodology, we can transform our marketing campaigns from broad, generalized efforts to highly targeted and efficient operations, even highly personalized campaigns. This boosts our successful bank product subscribers and ensures optimal resource usage. 
 
 
-## 2 Data Understandings: Backgound, Data Dictonoary, Quality Check, and EDA 
+## Step#2: Data Understandings: Backgound, Data Dictonoary, Quality Check, and EDA 
 
 
 ### 2.1 Background: 
@@ -86,16 +86,17 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 2.4.2 Numerical Variable and Response Variables.
    
-2.4.2.1 Histogram
+2.4.2.1 Group Histograms
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
 
+2.4.2.2 Group Statistics
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
 
 
-2.4.2.2 Histogram with Boxplot
+2.4.2.3 Individual Histogram with Boxplot
    
    Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
    Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights. 
@@ -151,7 +152,7 @@ It determines whether the means of numerical variables are significantly differe
     Number of Employees: Suggests periods with specific employment levels. 
     
 
-## 3 Data Preparation
+## Step#3: Data Preparation
 
     Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign).
     Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
@@ -191,7 +192,7 @@ Instead of dropping any variables, use a Random Forest Classifier to select top 
 This is efficient given the robonest of Random Forst and My limited computational resources.
 
 
-## 4 Modelling 
+## Step#4: Modelling 
 
 4.1 Modelling Objects:
    1) Find a model that can handle unbalanced data well. 
@@ -249,7 +250,7 @@ This is efficient given the robonest of Random Forst and My limited computationa
 
 
 
-## 5. Model Evaluation Parameters
+## Step#5: Model Evaluation Parameters
 
 5.1 Threshold Consideration
 
@@ -273,7 +274,7 @@ This is efficient given the robonest of Random Forst and My limited computationa
 
 
 Recomended Model 
-Random Forest
+The winner is Random Forest!
 
 
 ## Next Steps
