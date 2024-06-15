@@ -44,7 +44,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 ### 2.3 Data Quality Quick Check: 
 
-   1) 0 null values
+   1) 0 null/missing values
    2) 12 duplicates
    3) unbalanced dataset (11% of Success Rate)
    
@@ -94,9 +94,9 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
 
+2.4.3 Group Boxplots
 
-
-2.4.2.3 Individual Histogram with Boxplot
+2.4.4 Individual Histogram with Boxplot
    
    Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
    Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights. 
@@ -118,7 +118,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
 
     
-2.4.3 T-Tests 
+2.4.5 T-Tests 
 
 
 It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
@@ -126,13 +126,13 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
 
-2.4.4 Correlations 
+2.4.6 Correlations 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
    
 
-2.4.5 Findings from Numerical Variables. 
+2.4.7 Findings from Numerical Variables. 
 
     Age: Most customers are younger. 
     
@@ -185,12 +185,22 @@ It determines whether the means of numerical variables are significantly differe
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
 
+Summary for Correlation
+pdays and previous are moderately negatively correlated.
+emp.var.rate, euribor3m, and nr.employed are highly positively correlated with each other.
+euribor3m_segment_3 and above is highly correlated with euribor3m.
+poutcome_nonexistent and previous_segment_0 previous are highly correlated.
+previous_segment_1 previous and poutcome_success are highly correlated.
+previous_segment_2 or more previous is highly correlated with previous.
+
 
 3.2 Feature Selection Strategy
 
 Instead of dropping any variables, use a Random Forest Classifier to select top significant features. 
 This is efficient given the robonest of Random Forst and My limited computational resources.
 
+3.3. Multiliearnty detection
+Random Forest VIF
 
 ## Step#4: Modelling 
 
@@ -206,8 +216,21 @@ This is efficient given the robonest of Random Forst and My limited computationa
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
 
 
-4.2.2 Split the final dataset
-4.3.3 Scale the final dataset ( prevent data leakage)
+4.2.2 Modelling Steps Overview
+
+     1. Initially include all variables in the base model.
+     2. Use Random Forest to Identify the most important features.
+     3. Assess multicollinearity factors (VIF analysis) to exclude highly correlated variables.
+     4. Exclude variables based on: 1) Previous Correlation analysis, 2) Initial model results, and 2) VIF analysis to Ensured all selected features were correlated with the target variable without multicollinearity concerns.
+     5. Run correlation based on filtered dataset to ensure no highly correlatons between variables.
+     6. Understand How Optimal Thresholds impact the model
+     7. Test models using the top 20, 15, and 12 important features
+     8. Found that the top 12 features provided the best F1 score.
+     9. Conduct optimized threshold search and grid search to identify the best model for the Random Forest classifier.
+     10. Run and Compare performance of all 6 classifiers using the top 12 selected features.
+
+4.2.3 Split the final dataset
+4.3.4 Scale the final dataset ( prevent data leakage)
 
 
 
@@ -220,7 +243,12 @@ This is efficient given the robonest of Random Forst and My limited computationa
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/285becbc-96f6-4ecd-b8a1-787877a3c004) 
 
-4.5 Repeat 4.4 to Select top 20, top 15, and top 30. I found top 15 is the best model in term of F1-Score. 
+
+4.5 VIF Analysis ( Random Forest)
+
+4.6 Run Correlation Again
+
+4.5 Repeat 4.4 to Select top 20, top 15, and top 30. I found top 12 features perform best in term of F1-Score. 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/27b9d63b-cea7-4800-97ca-2caeaf613d20) 
 
