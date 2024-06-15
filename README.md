@@ -101,6 +101,53 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
 
 
+
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
+
+
+
+2) Histogram with Boxplot
+   
+
+
+   1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
+
+
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
+
+
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/3310e747-e38c-4de1-9d84-1791e75f7b02) 
+
+
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef850449-a748-41a4-8e1f-2e4a0394ace5) 
+
+
+   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
+
+
+
+  2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
+  3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
+  4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
+     
+3) T-Tests
+
+
+It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
+
+
+4) Correlations
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
+   
+
+5) Findings from Numerical Variables. 
+
   *Age:
 
   Most of the observations are clustered around the younger ages, with a significant drop-off as age increases. This suggests that the majority of the customers are younger.
@@ -138,67 +185,20 @@ Out of the entire dataset, there were 6,499 successful subscriptions, resulting 
   The number of employees shows a distribution centered around a few key values, suggesting periods with specific employment levels.
 
 
-Insights and Actions for Data Preparation/Feature Engineering
+6) Proposed Actions for Data Preparation/Feature Engineering
 
-Skewed Distributions:
+Log certain variable to correct their Skewed Distributions:
 Several features, such as pdays, previous, and campaign, show highly skewed distributions, indicating that most customers fall into a narrow range for these features.
 
-Clustered Values:
+Bin Some of Numerical Varaiables to Represent their Clustered Values:
 Features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed show values clustered around specific points, suggesting stable economic conditions during the data collection period.
 
 Customer Contact Patterns: The plots for campaign and previous suggest that customers are rarely contacted multiple times, both in the current and previous campaigns.
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/86cfbedc-a94f-4e68-824b-b0fa1b430dd7) 
+## Implement Feature Engineering Actions for categorical and numerical Variables
 
-
-
-2) Histogram with Boxplot
-   
-
-
-   1. Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
-
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
-
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/3310e747-e38c-4de1-9d84-1791e75f7b02) 
-
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef850449-a748-41a4-8e1f-2e4a0394ace5) 
-
-
-   ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
-
-
-
-  2. Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights.
-  3. Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness.
-  4. Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations.
-     
-   
-
-
-#### EDA 3) Further Analysis for Feature Selection
-
-1) T-TESTS 
-
-It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
-
-
-2) Correlations
-
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
-
-
-
-## Feature Engineering /Selection Actions
-
-Based on the findings from EDA 2) & EDA 1), The following steps are taken to prepare data for modelling:
+Based on the findings from previous d, The following steps are taken to prepare data for modelling:
 
 1. log Duration ( Mainly for Logistic Regression)
    
@@ -220,27 +220,28 @@ Based on the findings from EDA 2) & EDA 1), The following steps are taken to pre
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
 
 
-
-4. Run a correlation based on a filter (when correlation coefficient >0.1) to identify relative important variables
+4. Run a correlation again based on a filter (when correlation coefficient >0.1) to identify relative important variables
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
 
 
+Summary for CRISP -DM
 
-## Final Dataset for Modelling
+## Feature Selection Strategy  
+** Instead of dropping any variables, I decide to try something new: using Random Forest Classifer to help me select top significant features. Additionally, based on my reserach it is en efficient way to 
+under the limiation of compution resource.. 
+
+
+## Modelling Prework
+
+1) Final Dataset for Modelling
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
 
 
-Summary for CRISP -DM
-6: Feature Selection Strategy  
-** Instead of dropping variables from previous EDA, I decide to try something new: using Random Forest Classifer to help me select top significant features.
-Due to my limited computation power. I preselect features to run the models. 
-
-## Modelling Prework
-Split the final dataset
-Scale the final dataset 
+3) Split the final dataset
+4) Scale the final dataset 
 
 ## Modelling 
  
