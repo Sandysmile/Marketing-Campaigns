@@ -151,21 +151,21 @@ It determines whether the means of numerical variables are significantly differe
     Number of Employees: Suggests periods with specific employment levels. 
     
 
-2.4.6 Proposed Actions for Data Preparation
+## 3 Data Preparation
 
     Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign).
     Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
     Customer Contact Patterns: Implement feature engineering actions for categorical and numerical variables. 
     
 
-2.4.7 Feature Engieering Actions:
+3.1 Feature Engieering Actions:
 
-2.7.1 log Duration ( Mainly for Logistic Regression)
+3.1.1 log Duration ( Mainly for Logistic Regression)
    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c577a06e-a329-405a-a7cb-ff459c08f6fa) 
 
 
-2.7.2 Segementation of Numerical Variables/Create New Cateogircal Variables.
+3.1.2 Segementation of Numerical Variables/Create New Cateogircal Variables.
    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/af067870-fc14-4b9c-a93e-c3735aa4d265)
 
@@ -174,61 +174,63 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5bece7af-2f3a-4673-8923-c367d34521a5) 
 
 
-2.7.3 Encode all Categorical variables. Now the full dataset include 67 coded variables.
+3.1.3 Encode all Categorical variables. Now the full dataset include 67 coded variables.
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
 
 
-2.7.4 Run a correlation again based on a filter (when correlation coefficient >0.1) to identify relative important variables
+3.1.4 Run a correlation again based on a filter (when correlation coefficient >0.1) to identify relative important variables
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
 
 
-2.7 Feature Selection Strategy
+3.2 Feature Selection Strategy
 
 Instead of dropping any variables, use a Random Forest Classifier to select top significant features. 
 This is efficient given the robonest of Random Forst and My limited computational resources.
 
 
-## Modelling Prework
+## 4 Modelling 
 
-1) Final Dataset for Modelling
+4.1 Modelling Objects:
+   1) Find a model that can handle unbalanced data well. 
+   2) Find a optimal threshold that balance recall and precision score to meet business goal(Precision + Recall = F1 Score)
+
+
+4.2 Pre-work
+
+4.2.1 Final Dataset Overview
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
 
 
-3) Split the final dataset
-4) Scale the final dataset 
-
-## Modelling 
-
-1. Modelling Objects:
-   1) Find a model that can handle unbalanced data well. 
-   2) Find a optimal threshold that balance recall and precision score. 
+4.2.2 Split the final dataset
+4.3.3 Scale the final dataset ( prevent data leakage)
 
 
-2. Base Model (using Random Forest Classifer to select top significant features). 
+
+4.3 Base Model (using Random Forest Classifer to select top significant features). 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee)
 
-3. Feature Importance Analysis (using Random Forest)
+4.4  Feature Importance Analysis (using Random Forest)
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/285becbc-96f6-4ecd-b8a1-787877a3c004) 
 
-### 2) Then I chose top 20, top 15, and top 12. I found top 15 is the best model in term of F1-Score. 
+4.5 Repeat 4.4 to Select top 20, top 15, and top 30. I found top 15 is the best model in term of F1-Score. 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/27b9d63b-cea7-4800-97ca-2caeaf613d20) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9914640e-ba75-4c46-8cdc-2f427776a216) 
 
 
-### 3) Find Optimal threshold to meet business goal  
+4.6 Search Optimal threshold to meet business goal  
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/fadbdff6-69c8-4676-a70c-c5100303907d) 
 
 
-### 4) Cross Validations and Grid Search to find the statble and best model
+4.7 Cross Validations and Grid Search to find the statble and best model
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/88dabc67-f048-4bb9-8f08-9b0588e6add5) 
 
@@ -239,7 +241,7 @@ This is efficient given the robonest of Random Forst and My limited computationa
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a3803ddf-d15a-41b3-8329-acc60fcfe9ce) 
 
 
-### 5) Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers 
+4.8 Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5a866130-ab48-4ab0-9832-5a859df6d1cb) 
@@ -247,28 +249,27 @@ This is efficient given the robonest of Random Forst and My limited computationa
 
 
 
-## Model Evaluation Criteria
+## 5. Model Evaluation Parameters
 
-1) Threshold Consideration
+5.1 Threshold Consideration
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/23c751c6-c8ec-4aca-87f2-1163a315e3ff) 
 
-2) Precision and Recall Curve with Optimal Threshhold
+5.2 Precision and Recall Curve with Optimal Threshhold
    
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/10feb1f5-205f-43a5-a6f3-2c9829d6eb55)
 
 
-3) ROC Curve
+5.3 ROC Curve
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/808ed417-6825-4318-a70e-2ff657d4f23a) 
 
 
-4) Training and Testing Accurancy and Computing Time
+5.4 Training and Testing Accurancy and Computing Time
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/933c7dca-9e8a-446c-b3e5-696702eee519) 
-
 
 
 Recomended Model 
