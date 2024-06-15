@@ -9,9 +9,7 @@ In this practical application, the goal is to compare the performance of six cla
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/26a9f4ba-b87d-4319-ba53-fb00675ec3eb) 
 
 
-
 ## Business Understandings: Context, Goal and Benefits 
-
 
 In today's competitive market, optimizing the efficiency and effectiveness of direct marketing campaigns is crucial for increasing customer engagement and maximizing returns on business investment.
 
@@ -31,11 +29,14 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 ## Data Understandings: Backgound, Data Dictonoary, Quality Check, and EDA 
 
+
 ### Background: 
 
-The dataset comes from the UCI Machine Learning repository, collected from a Portuguese banking institution based on a collection of marketing campaign results using their contact center. The primary marketing channel was telephone calls by human agents, sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
+    The dataset comes from the UCI Machine Learning repository, collected from a Portuguese banking institution based on a collection of marketing campaign results using their contact center. The primary marketing channel was telephone calls by human agents, 
+    sometimes supplemented by online banking via the Internet. Each campaign was managed integrally, with combined results from all channels. 
 
-The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11% success rate. 
+    The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41,188 contacts. These campaigns promoted a long-term deposit application with attractive interest rates. For each contact, numerous attributes were recorded, including whether the 
+    campaign was successful as the target variable. Out of the entire dataset, there were 6,499 successful subscriptions, resulting in an 11% success rate. 
 
 ### Data Dictionary: 
 
@@ -55,11 +56,11 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
 
 1. Catogrical Variable and Response Variables.
 
-    Key Findings: Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome. 
+   Key Findings: Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome. 
 
-    Non-significant Features: Loan, housing, and day of the week do not significantly contribute to the subscription success.
+   Non-significant Features: Loan, housing, and day of the week do not significantly contribute to the subscription success.
 
-    Feature Engineering: Encode all categorical variables for basic models. 
+   Feature Engineering: Encode all categorical variables for basic models. 
 
    
     
@@ -83,9 +84,8 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
    
 
 
-
 2. Numerical Variable and Response Variables.
-
+   
 2.1 Histogram
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/bbd8bdbc-df34-4a07-908f-78b4bd476156) 
@@ -114,15 +114,18 @@ The dataset encompasses 17 campaigns from May 2008 to November 2010, totaling 41
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
+
     
-2.3 T-Tests
+2.3 T-Tests 
+
 
 It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
 
-2.4 Correlations
+2.4 Correlations 
+
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
    
@@ -147,24 +150,21 @@ It determines whether the means of numerical variables are significantly differe
     Number of Employees: Suggests periods with specific employment levels. 
     
 
-2.6 Proposed Actions for Data Preparation/Feature Engineering
+2.6 Proposed Actions for Data Preparation
 
     Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign).
     Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
     Customer Contact Patterns: Implement feature engineering actions for categorical and numerical variables. 
     
 
-## Implement Feature Engineering Actions for categorical and numerical Variables
+2.7 Feature Engieering Actions:
 
-Based on the findings from previous d, The following steps are taken to prepare data for modelling:
-
-1. log Duration ( Mainly for Logistic Regression)
+2.7.1 log Duration ( Mainly for Logistic Regression)
    
-
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c577a06e-a329-405a-a7cb-ff459c08f6fa) 
 
 
-2. Segementation of Numerical Variables/Create New Cateogircal Variables.
+2.7.2 Segementation of Numerical Variables/Create New Cateogircal Variables.
    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/af067870-fc14-4b9c-a93e-c3735aa4d265)
 
@@ -173,22 +173,21 @@ Based on the findings from previous d, The following steps are taken to prepare 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5bece7af-2f3a-4673-8923-c367d34521a5) 
 
 
-3. Encode all Categorical variables. Now the full dataset include 67 coded variables.
+2.7.3 Encode all Categorical variables. Now the full dataset include 67 coded variables.
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
 
 
-4. Run a correlation again based on a filter (when correlation coefficient >0.1) to identify relative important variables
+2.7.4 Run a correlation again based on a filter (when correlation coefficient >0.1) to identify relative important variables
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
 
 
-Summary for CRISP -DM
+2.7 Feature Selection Strategy
 
-## Feature Selection Strategy  
-** Instead of dropping any variables, I decide to try something new: using Random Forest Classifer to help me select top significant features. Additionally, based on my reserach it is en efficient way to 
-under the limiation of compution resource.. 
+Instead of dropping any variables, use a Random Forest Classifier to select top significant features. 
+This is efficient given the robonest of Random Forst and My limited computational resources.
 
 
 ## Modelling Prework
@@ -202,10 +201,15 @@ under the limiation of compution resource..
 4) Scale the final dataset 
 
 ## Modelling 
- 
-### 1) Base Model (using Random Forest Classifer to select top significant features). 
 
-One of my key goal is to find a good balance of Precision and Recall indicating by F1 Score.  The F1 score is low despite I using class_weight = 'balanced' 
+Modelling Objects:
+1) Find a model that can handle unbalanced data well. 
+2) Find a optimal threshold that balance recall and precision score. 
+
+
+1) Base Model (using Random Forest Classifer to select top significant features). 
+
+
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee)
