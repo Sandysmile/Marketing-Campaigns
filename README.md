@@ -53,7 +53,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 ### 2.4 Exploratory Data Anlaysis (EDA) 
 
-2.4.1 Catogrical Variable and Response Variables.
+2.4.1 Catogrical Variables and Response Variable.
 
    Key Findings: Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome. 
 
@@ -84,7 +84,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 
 
-2.4.2 Numerical Variable and Response Variables.
+2.4.2 Numerical Variables and Response Variable
    
 2.4.2.1 Group Histograms
 
@@ -118,7 +118,7 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/46e94d94-4842-4c3a-b961-a54527eaa63e) 
 
     
-2.4.5 T-Tests 
+2.4.5 T-Test 
 
 
 It determines whether the means of numerical variables are significantly different between the groups (e.g., "yes" vs. "no"). By doing so, I can understand which features are potentially influential in predicting the target variable. Since significant features can be more informative for machine learning models.  
@@ -126,7 +126,7 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f860e8f4-fea4-48a9-9086-5d94c37750c9) 
 
 
-2.4.6 Correlations 
+2.4.6 Correlation 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
@@ -154,9 +154,12 @@ It determines whether the means of numerical variables are significantly differe
 
 ## Step#3: Data Preparation
 
-    Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign).
+    Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign). 
+    
     Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
+    
     Customer Contact Patterns: Implement feature engineering actions for categorical and numerical variables. 
+    
     
 
 3.1 Feature Engieering Actions:
@@ -198,14 +201,14 @@ previous_segment_2 or more previous is highly correlated with previous.
 Instead of dropping any variables, use a Random Forest Classifier to select top significant features. 
 This is efficient given the robonest of Random Forst and My limited computational resources.
 
-3.3. Multiliearnty detection
+3.3. Multicollinearity Detection
 Random Forest VIF
 
 ## Step#4: Modelling 
 
 4.1 Modelling Objects:
    1) Find a model that can handle unbalanced data well. 
-   2) Find a optimal threshold that balance recall and precision score to meet business goal(Precision + Recall = F1 Score)
+   2) Find an optimal threshold that balance recall and precision score to meet business goal(Precision + Recall = F1 Score)
 
 
 4.2 Pre-work
