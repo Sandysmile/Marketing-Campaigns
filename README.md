@@ -55,15 +55,15 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 2.4.1 Catogrical Variables and Response Variable.
 
-   Key Findings:
+Key Findings:
    
    1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
    
-   Non-significant Features: 
+      Non-significant Features: 
    
    2) Loan, housing, and day of the week do not significantly contribute to the subscription success. 
    
-   Feature Engineering: 
+      Feature Engineering: 
    
    3) Encode all categorical variables for basic models. 
    
@@ -104,18 +104,19 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
    
    1) Highly Informative Features: 
    
-   Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings) 
+      Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings) 
    
-   2) Moderately Informative Features: 
-   Campaign contacts, age, and consumer confidence index provide additional insights. 
+   2) Moderately Informative Features:
+      
+      Campaign contacts, age, and consumer confidence index provide additional insights. 
    
    3) Economic Indicators: 
    
-   Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness. 
+      Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness. 
    
    4) Customer Contact Patterns: 
    
-   Effective campaigns involve fewer, more targeted contacts and longer call durations.
+      Effective campaigns involve fewer, more targeted contacts and longer call durations.
    
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
@@ -238,52 +239,54 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
      10. Run and Compare performance of all 6 classifiers using the top 12 selected features.
 
 4.2.2 Split Dataset
-4.3.3 Scale Dataset (part of data prevention done after splitting dataset) to prevent data leakage 
 
+4.2.3 Scale the Dataset (performed after splitting to prevent data leakage) 
 
-4.3 Base Model Development (using Random Forest Classifer to Understand/Select Top Important Features). 
+4.3 Base Model Development (Using Random Forest Classifer to Understand/Select Top Important Features). 
 
-4.4  Feature Importance Analysis (using Random Forest) 
+4.4  Feature Importance Analysis (Using Random Forest) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/52f100b1-1e64-4466-bfb1-b8aa0a4389b1)  
 
 
-4.5 VIF Analysis ( Random Forest) 
+4.5 VIF Analysis (Random Forest) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0122b9e2-fae2-464a-9a37-c53a343a7b69) 
 
-4.6 Insights:
+4.6 Insights/Actions:
 
-High VIF Values (Potential Multicollinearity Issues):
+   1) High VIF Values (Potential Multicollinearity Issues):
 
-pdays_segment_100 days and above
-euribor3m_segment_Below 3
-euribor3m_segment_3 and above
-pdays_segment_Below 100 days 
+     pdays_segment_100 days and above
+     euribor3m_segment_Below 3
+     euribor3m_segment_3 and above
+     pdays_segment_Below 100 days 
 
-Moderate VIF Values:
+   2) Moderate VIF Values:
 
-pdays: VIF = 77435.77
-emp.var.rate: VIF = 41292.00
-nr.employed: VIF = 35629.81
+     pdays: VIF = 77435.77
+     emp.var.rate: VIF = 41292.00
+     nr.employed: VIF = 35629.81
 
 
-Exclude Features with Inf VIF Values:
+   3) Exclude Features with Inf VIF Values:
 
-pdays_segment_100 days and above
-euribor3m_segment_Below 100 days
-euribor3m_segment_3 and above
-pdays_segment_Below 100 days
+     pdays_segment_100 days and above
+     euribor3m_segment_Below 100 days
+     euribor3m_segment_3 and above
+     pdays_segment_Below 100 days
 
-Consider Excluding Features with Very High VIF Values (Above 10):
-pdays
-emp.var.rate
-nr.employed
+   4) Consider Excluding Features with Very High VIF Values (Above 10):
 
-Highly Correlated Features:
-emp.var.rate
-nr.employed
-euribor3m
+     pdays
+     emp.var.rate
+     nr.employed
+
+   5) Consider Excluding One or Two Highly Correlated Features:
+
+     emp.var.rate
+     nr.employed
+     euribor3m
 
 4.7 Run Correlation Again (after filtering out features with high VIF values and Correlation Coefficients
 
