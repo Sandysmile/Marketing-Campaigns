@@ -57,15 +57,15 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
    Key Findings:
    
-   Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
+   1) Job, education, contact, previous outcome, and month appear to be more influential in determining the outcome.
    
    Non-significant Features: 
    
-   Loan, housing, and day of the week do not significantly contribute to the subscription success. 
+   2) Loan, housing, and day of the week do not significantly contribute to the subscription success. 
    
    Feature Engineering: 
    
-   Encode all categorical variables for basic models. 
+   3) Encode all categorical variables for basic models. 
    
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/4d07a0f4-a351-45c5-9ed7-aa2e49cd1d9b) 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b833d6bf-625f-431f-bda2-5816ce588909) 
@@ -102,18 +102,18 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 2.4.4 Individual Histogram with Boxplot
    
-   Highly Informative Features: 
+   1) Highly Informative Features: 
    
    Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings) 
    
-   Moderately Informative Features: 
+   2) Moderately Informative Features: 
    Campaign contacts, age, and consumer confidence index provide additional insights. 
    
-   Economic Indicators: 
+   3) Economic Indicators: 
    
    Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness. 
    
-   Customer Contact Patterns: 
+   4) Customer Contact Patterns: 
    
    Effective campaigns involve fewer, more targeted contacts and longer call durations.
    
@@ -144,33 +144,33 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/022c9b88-af82-4b2b-9177-d396f40bddf0) 
    
 
-2.4.7 Findings from Numerical Variables. 
+2.4.7 Findings 
 
-    Age: Most customers are younger. 
+    #Age: Most customers are younger. 
     
-    Campaign: Highly skewed towards fewer contacts. 
+    #Campaign: Highly skewed towards fewer contacts. 
     
-    Previous: Most customers have not been contacted in previous campaigns. 
+    #Previous: Most customers have not been contacted in previous campaigns. 
     
-    Employment Variation Rate: Indicates relatively stable employment conditions. 
+    #Employment Variation Rate: Indicates relatively stable employment conditions. 
     
     
-    Pdays: Large gap between contacts for many customers. 
+    #Pdays: Large gap between contacts for many customers. 
     
-    Consumer Price Index and Consumer Confidence Index: Clustered around specific periods.
+    #Consumer Price Index and Consumer Confidence Index: Clustered around specific periods.
     
-    Euribor 3 Month Rate: Indicates periods of higher interest rates. 
+    #Euribor 3 Month Rate: Indicates periods of higher interest rates. 
     
-    Number of Employees: Suggests periods with specific employment levels. 
+    #Number of Employees: Suggests periods with specific employment levels. 
     
 
 ## Step#3: Data Preparation
 
-    Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign). 
+    1) Log Transformation: Correct skewed distributions (e.g., pdays, previous, campaign). 
     
-    Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
+    2) Binning Numerical Variables: Represent clustered values for features like emp.var.rate, cons.price.idx, cons.conf.idx, euribor3m, and nr.employed. 
     
-    Customer Contact Patterns: Implement feature engineering actions for categorical and numerical variables. 
+    3) Customer Contact Patterns: Implement feature engineering actions for categorical and numerical variables. 
     
     
 
@@ -200,29 +200,28 @@ It determines whether the means of numerical variables are significantly differe
 
 Insights from Correlation Anaysis:
 
-pdays and previous are moderately negatively correlated.
-emp.var.rate, euribor3m, and nr.employed are highly positively correlated with each other.
-euribor3m_segment_3 and above is highly correlated with euribor3m.
-poutcome_nonexistent and previous_segment_0 previous are highly correlated.
-previous_segment_1 previous and poutcome_success are highly correlated.
-previous_segment_2 or more previous is highly correlated with previous.
+1) pdays and previous are moderately negatively correlated.
+2) emp.var.rate, euribor3m, and nr.employed are highly positively correlated with each other.
+3) euribor3m_segment_3 and above is highly correlated with euribor3m.
+4) poutcome_nonexistent and previous_segment_0 previous are highly correlated.
+5) previous_segment_1 previous and poutcome_success are highly correlated.
+6) previous_segment_2 or more previous is highly correlated with previous.
 
 
 3.2 Feature Selection Strategy
 
-Instead of dropping any variables, use a Random Forest Classifier to select top significant features. 
-This is efficient given the robonest of Random Forst and My limited computational resources.
+Instead of dropping any variables outright, use a Random Forest to identify and select the most significant features. Given the robustness of Random Forest and the limited computational resources available, this approach will help ensure that the most impactful variables are retained for further analysis. 
 
-3.3. Multicollinearity Detection
-Random Forest VIF
 
 ## Step#4: Modelling 
 
-4.1 Modelling Objects:
-   1) Find a model that can handle unbalanced data well. 
-   2) Find an optimal threshold that balance recall and precision score to meet business goal(Precision + Recall = F1 Score)
+4.1 Modelling Objectives: 
 
+  1) Identify a model that effectively handles imbalanced data.
+     
+  2) Determine an optimal threshold that balances recall and precision scores to meet the business objective, ensuring a high F1 score (Precision + Recall = F1 Score).
 
+     
 4.2 Pre-work
 
 4.2.1 Modelling Steps Overview
@@ -238,11 +237,11 @@ Random Forest VIF
      9. Conduct optimized threshold search and grid search to identify the best model for the Random Forest classifier.
      10. Run and Compare performance of all 6 classifiers using the top 12 selected features.
 
-4.2.2 Split the final dataset
-4.3.3 Scale the final dataset ( prevent data leakage) 
+4.2.2 Split Dataset
+4.3.3 Scale Dataset (part of data prevention done after splitting dataset) to prevent data leakage 
 
 
-4.3 Base Model Development (using Random Forest Classifer to Understand/Select top significant features). 
+4.3 Base Model Development (using Random Forest Classifer to Understand/Select Top Important Features). 
 
 4.4  Feature Importance Analysis (using Random Forest) 
 
