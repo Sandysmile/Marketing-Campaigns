@@ -7,6 +7,11 @@ In this practical application, the goal is to compare the performance of six cla
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/26a9f4ba-b87d-4319-ba53-fb00675ec3eb) 
 
+## Project Summary 
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/13dd09f3-cae1-48ed-bd0a-50c6e038994c)
+
 
 ## Step#1: Business Understandings: Context, Goal and Benefits 
 
