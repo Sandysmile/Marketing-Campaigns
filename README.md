@@ -180,10 +180,11 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
 
 
-3.1.4 Run a correlation again based on a filter (when correlation coefficient >0.1) to identify relative important variables
+3.1.4 Run a correlation again based on a filter (when correlation coefficient >0.05) to identify relative important variables
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b0cf467c-20f7-4d0b-88ba-da039c97131c) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ceaf662b-c444-4664-8af6-540ef6b59fdd) 
+
 
 Summary for Correlation
 pdays and previous are moderately negatively correlated.
