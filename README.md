@@ -102,13 +102,17 @@ By leveraging machine learning and the CRISP-DM methodology, we can transform ou
 
 2.4.4 Individual Histogram with Boxplot
    
-   Highly Informative Features: Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings)
-   Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights. 
-    
-   Economic Indicators: Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness. 
+   Highly Informative Features: 
+   Call duration, pdays, previous contacts, employment variation rate, and Euribor rate are strong indicators for predicting positive responses (see the titles of the charts below for detailed findings) 
    
-   Customer Contact Patterns: Effective campaigns involve fewer, more targeted contacts and longer call durations. 
-    
+   Moderately Informative Features: Campaign contacts, age, and consumer confidence index provide additional insights. 
+   
+   Economic Indicators: 
+   Negative employment variation rates and lower Euribor rates are associated with "yes" responses, indicating less favorable economic conditions may increase receptiveness. 
+   
+   Customer Contact Patterns: 
+   Effective campaigns involve fewer, more targeted contacts and longer call durations.
+   
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/df4238af-28b7-46e3-9b77-27e344d43f44) 
 
