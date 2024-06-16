@@ -227,10 +227,7 @@ Random Forest VIF
 4.3.3 Scale the final dataset ( prevent data leakage) 
 
 
-4.3 Base Model (using Random Forest Classifer to Understand/Select top significant features). 
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee) 
-
+4.3 Base Model Development (using Random Forest Classifer to Understand/Select top significant features). 
 
 4.4  Feature Importance Analysis (using Random Forest) 
 
@@ -278,9 +275,12 @@ euribor3m
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0e68c0ef-dd26-4f6f-997e-ffabfc64fdec)
 
-4.8 Final Dataset for building simple model (62 features and 1 response variable ) 
+4.8 Final Dataset for building a simple model (62 features and 1 response variable ) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b01a55e4-9f9f-44bd-8a92-111cf1c93b7c) 
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0984f9f0-bd6d-427b-90b3-8571b4b69cec)
 
 
 4.9 Repeat 4.4 to Select top 20, top 15, and top 12. I found top 12 features perform best in term of F1-Score. 
