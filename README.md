@@ -307,14 +307,13 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
 
 
 
-4.6 Search Optimal threshold to meet the defined modelling goal  
+4.6 Search Optimal thresholds to Meet the Modelling Objective
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/6812e545-7904-423a-a8a0-0fe6a393d1fa) 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef6a759f-85d1-4bf5-8b52-8a5dbac6e729) 
 
 
-4.7 Cross Validations and Grid Search to find the statble and best model with optimal threshold
+4.7 Use Cross Validations and Grid Search to find the Stable and Best Model with Optimal Threshold for F1 Score
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/06accc7d-0b17-448c-989c-0981ee5d030e) 
 
