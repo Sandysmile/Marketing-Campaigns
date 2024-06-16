@@ -280,39 +280,43 @@ euribor3m
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b01a55e4-9f9f-44bd-8a92-111cf1c93b7c) 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0984f9f0-bd6d-427b-90b3-8571b4b69cec)
-
 
 4.9 Repeat 4.4 to Select top 20, top 15, and top 12. I found top 12 features perform best in term of F1-Score. 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f292c144-eb0d-4571-b9b7-64e04fbb4330) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/e644c0aa-fbcc-4ddf-905c-ea4e6d175589) 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/27b9d63b-cea7-4800-97ca-2caeaf613d20) 
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9914640e-ba75-4c46-8cdc-2f427776a216) 
-
-4.10 
-
-4.6 Search Optimal threshold to meet business goal  
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/fadbdff6-69c8-4676-a70c-c5100303907d) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0c3c7f61-2b65-42a4-a626-918a66411b07) 
 
 
-4.7 Cross Validations and Grid Search to find the statble and best model
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/88dabc67-f048-4bb9-8f08-9b0588e6add5) 
+4.6 Search Optimal threshold to meet the defined modelling goal  
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/6812e545-7904-423a-a8a0-0fe6a393d1fa) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ef6a759f-85d1-4bf5-8b52-8a5dbac6e729) 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/14df72d3-9d11-4b74-b9f1-d8b74d0ff846) 
+4.7 Cross Validations and Grid Search to find the statble and best model with optimal threshold
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/06accc7d-0b17-448c-989c-0981ee5d030e) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/4be2bb78-affc-4e9f-9a4b-ac154f71f78c) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/20cb5219-4245-4d77-8c78-a6577b49b49e) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/8762ca96-46b8-4270-a371-b18be7c2ebb0) 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a3803ddf-d15a-41b3-8329-acc60fcfe9ce) 
 
 
 4.8 Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers 
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5a866130-ab48-4ab0-9832-5a859df6d1cb) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a714cdda-5f7e-4343-819b-78eef2d48045) 
+
+
+ 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/1bf057dc-1ac2-4142-b1c6-9dfda42c9e99) 
 
 
@@ -321,68 +325,77 @@ euribor3m
 
 5.1 Threshold Consideration
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/23c751c6-c8ec-4aca-87f2-1163a315e3ff) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/d2f7cbac-45b2-4427-8423-d8204aecc844) 
+
 
 5.2 Precision and Recall Curve with Optimal Threshhold
    
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/10feb1f5-205f-43a5-a6f3-2c9829d6eb55)
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/8e48e757-8b14-46ae-9b13-4c18a2880222) 
 
 
 5.3 ROC Curve
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/808ed417-6825-4318-a70e-2ff657d4f23a) 
+!![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f4b5593f-ee8b-4c48-842e-6c810efd64b2) 
 
 
 5.4 Training and Testing Accurancy and Computing Time
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/933c7dca-9e8a-446c-b3e5-696702eee519) 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f7a41c3a-6f12-4720-8362-91be82701cf8) 
 
+ 
 
-## Conclusions:
+## Recommendations:
 
-The Random Forest classifier is recommended for deployment due to its strong performance in testing accuracy and reasonable computation time.  
+1. Model Selection:
 
-Random Forest and SVM classifiers showed strong performance with high testing accuracy and decent F1 scores.
-Random Forest is recommended due to its slightly higher testing accuracy (0.91) and reasonable computation time.
-SVM could be considered if computation time is not a constraint, as it also showed strong performance with a high F1 score.
-Decision Tree is easiler overfitted the training data. 
+Deploy Random Forest due to its high testing accuracy (0.91) and reasonable computation time.
+Monitor Logistic Regression as a quick backup option for scenarios requiring rapid retraining.
+Consider SVM for batch processing or periodic analysis if computation resources allow.
 
+2. Cost-Benefit Analysis:
 
-## Cost-Benefit Analysis:
-
-Random Forest has a longer computation time compared to Logistic Regression but provides higher accuracy.
-Logistic Regression offers a quick computation time with competitive performance.
-SVM, while effective, has a very high computation time which may not be practical for regular updates.
+Random Forest offers a balance of performance and computation time.
+Logistic Regression provides a quick computation time with competitive performance.
+SVM has a high computation time which may not be practical for regular updates but can be used for detailed analysis.
 Implementation Strategy:
 
-Deploy the Random Forest model due to its balance of performance and computation time.
-Monitor the Logistic Regression model as a backup or for scenarios where quick retraining is needed.
-Use SVM model for batch processing or periodic analysis if computation resources allow.
+3. Deploy Random Forest as the primary model.
+Keep Logistic Regression as an alternative for quick updates.
+Use SVM selectively for in-depth analysis.
 
+Further Actions:
 
-## Further Actions:
+1. Threshold Adjustment:
+Regularly fine-tune the decision threshold to align with business goals.
 
-Regular monitoring, threshold adjustments, and stakeholder communication are crucial for maintaining and improving model effectiveness.
+2. Regular Model Updates: Retrain models periodically with new data.
 
-Threshold Adjustment: Fine-tune the decision threshold periodically to align with business goals (cost reduction or maximizing conversions).
-Regular Model Updates: Retrain models periodically with new data to maintain performance.
-Customer Segmentation: Use model predictions to segment customers for targeted marketing campaigns, improving resource allocation and campaign efficiency.
+3. Customer Segmentation: Utilize model predictions for targeted marketing campaigns.
 Handling Imbalanced Datasets:
 
-If dataset imbalance is a concern, consider using techniques like SMOTE (Synthetic Minority Over-sampling Technique) to balance the dataset.
-Continuously monitor the precision and recall metrics to ensure the model remains effective in identifying true positives without excessively increasing false positives.
+4. Dataset Balance Use SMOTE or other techniques to balance the dataset.
+5. Continuously monitor precision and recall metrics to ensure the model effectively identifies true positives.
+6. Stakeholder Communication:
+
+   1) Highlight high AUC and F1 scores.
+   2) Explain trade-offs between precision and recall.
+   3) Provide visualizations (ROC curves, precision-recall curves).
+   4) Discuss business implications of different threshold settings on campaign costs and customer experience using imbalanced dataset
 
 
-Stakeholder Communication:
+## Conclusion:
 
-Highlight the high AUC and F1 scores to demonstrate the model's robustness.
-Explain the trade-offs between precision and recall, especially for class 1 (subscribers).
-Provide visualizations (ROC curves, precision-recall curves) to make the performance metrics more understandable.
-Discuss the business implications of different threshold settings and the potential impact on campaign costs and customer experience.
+The Random Forest classifier is recommended for deployment due to its strong performance and reasonable computation time. Logistic Regression can serve as a quick alternative, while SVM can be used for periodic detailed analysis. Regular monitoring, threshold adjustments, and effective stakeholder communication are crucial for maintaining and improving model performance.
 
-Following CRISP-DM Methodology to Monitor the performance of classiders with new data and new features available. 
+
+
+
+
+
+
+
 
 
 
