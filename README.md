@@ -301,11 +301,52 @@ Random Forest VIF
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/933c7dca-9e8a-446c-b3e5-696702eee519) 
 
 
-Recomended Model 
-The winner is Random Forest!
+## Conclusions:
+
+The Random Forest classifier is recommended for deployment due to its strong performance in testing accuracy and reasonable computation time.  
+
+Random Forest and SVM classifiers showed strong performance with high testing accuracy and decent F1 scores.
+Random Forest is recommended due to its slightly higher testing accuracy (0.91) and reasonable computation time.
+SVM could be considered if computation time is not a constraint, as it also showed strong performance with a high F1 score.
+Decision Tree is easiler overfitted the training data. 
 
 
-## Next Steps
+## Cost-Benefit Analysis:
+
+Random Forest has a longer computation time compared to Logistic Regression but provides higher accuracy.
+Logistic Regression offers a quick computation time with competitive performance.
+SVM, while effective, has a very high computation time which may not be practical for regular updates.
+Implementation Strategy:
+
+Deploy the Random Forest model due to its balance of performance and computation time.
+Monitor the Logistic Regression model as a backup or for scenarios where quick retraining is needed.
+Use SVM model for batch processing or periodic analysis if computation resources allow.
+
+
+## Further Actions:
+
+Regular monitoring, threshold adjustments, and stakeholder communication are crucial for maintaining and improving model effectiveness.
+
+Threshold Adjustment: Fine-tune the decision threshold periodically to align with business goals (cost reduction or maximizing conversions).
+Regular Model Updates: Retrain models periodically with new data to maintain performance.
+Customer Segmentation: Use model predictions to segment customers for targeted marketing campaigns, improving resource allocation and campaign efficiency.
+Handling Imbalanced Datasets:
+
+If dataset imbalance is a concern, consider using techniques like SMOTE (Synthetic Minority Over-sampling Technique) to balance the dataset.
+Continuously monitor the precision and recall metrics to ensure the model remains effective in identifying true positives without excessively increasing false positives.
+
+
+Stakeholder Communication:
+
+Highlight the high AUC and F1 scores to demonstrate the model's robustness.
+Explain the trade-offs between precision and recall, especially for class 1 (subscribers).
+Provide visualizations (ROC curves, precision-recall curves) to make the performance metrics more understandable.
+Discuss the business implications of different threshold settings and the potential impact on campaign costs and customer experience.
+
+Following CRISP-DM Methodology to Monitor the performance of classiders with new data and new features available. 
+
+
+
 
 
 
