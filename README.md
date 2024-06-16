@@ -230,25 +230,63 @@ Random Forest VIF
      10. Run and Compare performance of all 6 classifiers using the top 12 selected features.
 
 4.2.3 Split the final dataset
-4.3.4 Scale the final dataset ( prevent data leakage)
+4.3.4 Scale the final dataset ( prevent data leakage) 
+
+
+4.3 Base Model (using Random Forest Classifer to Understand/Select top significant features). 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee) 
+
+
+4.4  Feature Importance Analysis (using Random Forest) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/52f100b1-1e64-4466-bfb1-b8aa0a4389b1)  
+
+
+4.5 VIF Analysis ( Random Forest) 
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0122b9e2-fae2-464a-9a37-c53a343a7b69) 
+
+4.6 Insights:
+
+High VIF Values (Potential Multicollinearity Issues):
+
+pdays_segment_100 days and above
+euribor3m_segment_Below 3
+euribor3m_segment_3 and above
+pdays_segment_Below 100 days 
+
+Moderate VIF Values:
+
+pdays: VIF = 77435.77
+emp.var.rate: VIF = 41292.00
+nr.employed: VIF = 35629.81
 
 
 
-4.3 Base Model (using Random Forest Classifer to select top significant features). 
+Exclude Features with Inf VIF Values:
+
+pdays_segment_100 days and above
+euribor3m_segment_Below 100 days
+euribor3m_segment_3 and above
+pdays_segment_Below 100 days
+
+Consider Excluding Features with Very High VIF Values (Above 10):
+pdays
+emp.var.rate
+nr.employed
+
+Highly Correlated Features:
+emp.var.rate
+nr.employed
+euribor3m
+
+4.6 Run Correlation Again (after filtering out features with high VIF values and Correlation Coefficients
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0e68c0ef-dd26-4f6f-997e-ffabfc64fdec)
 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/617b5fa5-8f56-4927-9119-8508ecb00bee)
-
-4.4  Feature Importance Analysis (using Random Forest)
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/285becbc-96f6-4ecd-b8a1-787877a3c004) 
-
-
-4.5 VIF Analysis ( Random Forest)
-
-4.6 Run Correlation Again
-
-4.5 Repeat 4.4 to Select top 20, top 15, and top 30. I found top 12 features perform best in term of F1-Score. 
+4.5 Repeat 4.4 to Select top 20, top 15, and top 12. I found top 12 features perform best in term of F1-Score. 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/27b9d63b-cea7-4800-97ca-2caeaf613d20) 
 
