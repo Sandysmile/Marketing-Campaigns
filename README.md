@@ -329,11 +329,11 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
 4.8 Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers 
 
 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c6a6207d-eaaf-4618-81b3-212aff84e278) 
+
+
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/a714cdda-5f7e-4343-819b-78eef2d48045) 
 
-
- 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/1bf057dc-1ac2-4142-b1c6-9dfda42c9e99) 
 
 
 
