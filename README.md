@@ -276,29 +276,22 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
      euribor3m_segment_3 and above
      pdays_segment_Below 100 days
 
-   4) Consider Excluding Features with Very High VIF Values (Above 10):
-
-     pdays
-     emp.var.rate
-     nr.employed
-
-   5) Consider Excluding One or Two Highly Correlated Features:
+   5) Excluding Two Highly Correlated Features below:
 
      emp.var.rate
      nr.employed
-     euribor3m
 
-4.7 Run Correlation Again (after filtering out features with high VIF values and Correlation Coefficients
+4.7 Run Correlation Again (after Filtering out Features with High VIF values)
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0e68c0ef-dd26-4f6f-997e-ffabfc64fdec)
 
-4.8 Final Dataset for building a simple model (62 features and 1 response variable ) 
+4.8 Final Dataset for Building a Simple Model Using Random Forest (62 Features and 1 Response Variable ) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b01a55e4-9f9f-44bd-8a92-111cf1c93b7c) 
 
 
 
-4.9 Repeat 4.4 to Select top 20, top 15, and top 12. I found top 12 features perform best in term of F1-Score. 
+4.9 Repeat 4.4 to Try Top 15, and Top 12 Scenario. Top 12 has the Highest F1-Score. 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/e644c0aa-fbcc-4ddf-905c-ea4e6d175589) 
@@ -307,13 +300,13 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
 
 
 
-4.6 Search Optimal thresholds to Meet the Modelling Objective
+4.6 Search Optimal Thresholds to Meet the Modelling Objective
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/6812e545-7904-423a-a8a0-0fe6a393d1fa) 
 
 
 
-4.7 Use Cross Validations and Grid Search to find the Stable and Best Model with Optimal Threshold for F1 Score
+4.7 Use Cross Validations and Grid Search to Find the Stable and Best Model with Optimal Threshold for F1 Score
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/06accc7d-0b17-448c-989c-0981ee5d030e) 
 
@@ -326,7 +319,7 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
 
 
 
-4.8 Model Hypermeters Specifications and Identify the Best Threshold for each of 5 classifers 
+4.8 Model Hypermeters Specifications and Identify the Best Threshold for Each Classifer 
 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/c6a6207d-eaaf-4618-81b3-212aff84e278) 
@@ -337,7 +330,7 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
 
 
 
-## Step#5: Model Evaluation Parameters
+## Step#5: Model Evaluation Criteria
 
 5.1 Threshold Consideration
 
