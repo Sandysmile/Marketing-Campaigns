@@ -310,8 +310,6 @@ Instead of dropping any variables outright, use a Random Forest to identify and 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/06accc7d-0b17-448c-989c-0981ee5d030e) 
 
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/4be2bb78-affc-4e9f-9a4b-ac154f71f78c) 
-
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/20cb5219-4245-4d77-8c78-a6577b49b49e) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/8762ca96-46b8-4270-a371-b18be7c2ebb0) 
