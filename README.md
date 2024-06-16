@@ -175,18 +175,16 @@ It determines whether the means of numerical variables are significantly differe
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/5bece7af-2f3a-4673-8923-c367d34521a5) 
 
 
-3.1.3 Encode all Categorical variables. Now the full dataset include 67 coded variables.
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9c421e84-fa1b-499f-a050-2847d776319f) 
+3.1.3 Encode all Categorical variables
 
 
 3.1.4 Run a correlation again based on a filter (when correlation coefficient >0.05) to identify relative important variables
 
-
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/ceaf662b-c444-4664-8af6-540ef6b59fdd) 
 
 
-Summary for Correlation
+Insights from Correlation Anaysis:
+
 pdays and previous are moderately negatively correlated.
 emp.var.rate, euribor3m, and nr.employed are highly positively correlated with each other.
 euribor3m_segment_3 and above is highly correlated with euribor3m.
@@ -212,12 +210,7 @@ Random Forest VIF
 
 4.2 Pre-work
 
-4.2.1 Final Dataset Overview
-
-![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0b0d5531-76c4-4d27-9c32-f4a5468cdc70) 
-
-
-4.2.2 Modelling Steps Overview
+4.2.1 Modelling Steps Overview
 
      1. Initially include all variables in the base model.
      2. Use Random Forest to Identify the most important features.
@@ -230,8 +223,8 @@ Random Forest VIF
      9. Conduct optimized threshold search and grid search to identify the best model for the Random Forest classifier.
      10. Run and Compare performance of all 6 classifiers using the top 12 selected features.
 
-4.2.3 Split the final dataset
-4.3.4 Scale the final dataset ( prevent data leakage) 
+4.2.2 Split the final dataset
+4.3.3 Scale the final dataset ( prevent data leakage) 
 
 
 4.3 Base Model (using Random Forest Classifer to Understand/Select top significant features). 
@@ -264,7 +257,6 @@ emp.var.rate: VIF = 41292.00
 nr.employed: VIF = 35629.81
 
 
-
 Exclude Features with Inf VIF Values:
 
 pdays_segment_100 days and above
@@ -282,17 +274,25 @@ emp.var.rate
 nr.employed
 euribor3m
 
-4.6 Run Correlation Again (after filtering out features with high VIF values and Correlation Coefficients
+4.7 Run Correlation Again (after filtering out features with high VIF values and Correlation Coefficients
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/0e68c0ef-dd26-4f6f-997e-ffabfc64fdec)
 
+4.8 Final Dataset for building simple model (62 features and 1 response variable ) 
 
-4.5 Repeat 4.4 to Select top 20, top 15, and top 12. I found top 12 features perform best in term of F1-Score. 
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/b01a55e4-9f9f-44bd-8a92-111cf1c93b7c) 
+
+
+4.9 Repeat 4.4 to Select top 20, top 15, and top 12. I found top 12 features perform best in term of F1-Score. 
+
+
+![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/f292c144-eb0d-4571-b9b7-64e04fbb4330) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/27b9d63b-cea7-4800-97ca-2caeaf613d20) 
 
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/9914640e-ba75-4c46-8cdc-2f427776a216) 
 
+4.10 
 
 4.6 Search Optimal threshold to meet business goal  
 ![image](https://github.com/Sandysmile/Marketing-Campaigns/assets/20648423/fadbdff6-69c8-4676-a70c-c5100303907d) 
